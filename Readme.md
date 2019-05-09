@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артём Волканин](https://up.htmlacademy.ru/htmlcss/25/user/969735).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
