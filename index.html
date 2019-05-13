@@ -6,9 +6,10 @@
   </head>
   <body>
 <header class="main-header">
-  <img class="logo.sedona" src="#" alt="Логотип сайта CEDONA"> <!--иконка в верху страницы-->
-  <img class="hi" src="#" alt="Приветсвенное изображение">
     <nav class="main-navigation">
+      <a class="main-header" href="#">
+        <img src="img/index-logo.svg" alt="Логотип седона">
+      </a>
       <ul class="site-navigation">
         <li class="information"><a href="information.html">Информация</a></li>
         <li class="Photo and video"><a href="Photo and video.html">Фото и видео</a></li>
@@ -17,102 +18,74 @@
       </ul>
     </nav>
 </header>
+
+<img src="#" alt="welcome cedona">
+
 <main class="container">
-    <h1>SEDONA</h1> <!--в дальнейшем нужно скрыть-->
-
-    <!--МОЖНО СДЕЛАТЬ ТАК-->
-  <section class="real-town.picture"> <!--№1 приемущества-->
-    <img class="town" src="#" alt="town">
-
-    <section class="icon.inf"> <!--приемущества входящие в номер 1-->
-      <ul class="block-1">
-        <img class="housing.logo" src="#" alt="housing.logo">
-
-          <li class="housing"><h2>жилье</h2></li>
-          <li class="hous"><h3>рекомендуем пожить в настоящем мотеле, все как в кино!</h3></li>
-
-      </ul>
-
-      <ul class="block-1">
-        <img class="food.logo" src="#" alt="food.logo"> <!--приемущества входящие в номер 1-->
-          <li class="food"><h2>еда</h2></li>
-          <li class="fo"><h3>всегда заказывайте фирменные бургеры, вы не разочаруетесь!</h3></li>
-      </ul>
-
-      <ul class="block-1">
-        <img class="souvenirs.logo" src="#" alt="souvenirs.logo"> <!--приемущества входящие в номер 1-->
-        <li class="souvenirs"><h2>сувениры</h2></li>
-        <li class="souv"><h3>не только китайского, но и местного производства!</h3></li>
-      </ul>
-    </section>
-
-    <section class="bridge.picture">
-      <img class="bridg.html" src="#" alt="bridg.html">
-      <ul class="block-2">
-        <img class="square-3" src="#" alt="square-№3">
-        <li class="square"><h2>небоьшая пложадь</h2></li>
-        <li class="squ"><h3>все достопримечательности находятся очень близко</h3></li>
-      </ul>
-
-      <ul class="block-2">
-        <img class="road-4" src="#" alt="road-№4">
-        <li class="road"><h2>красивая дорога</h2></li>
-        <li class="ro"><h3>ехать в седону из лас-вегаса совсем не скучно!</h3></li>
-      </ul>
-
-      <ul class="block-2">
-        <img class="tourists-5" src="#" alt="tourists-№5">
-        <li class="tourists"><h2>мало туристов</h2></li>
-        <li class="tour"><h3>большинство едет в гранд каньен и толпится там</h3></li>
-      </ul>
-
-      <!--ИЛИ МОЖНО СДЕЛАТЬ ВОТ ТАК (я не знаю прав или нет, если да то этот вариант очень простой получается.Сорее всего так делать не нужно)
-      <section>
-        <img src="#" alt="real-town.picture">
-      </section>
-      <section>
-        <img src="#" alt="devil's.bridge">
-      </section>
-    -->
-    </section>
-    <section>
-      <img class="map.html" src="#" alt="map.html">
-      <table border="2">
-        <tr>
-          <th>поиск гостиницы в седоне</th>
-        </tr>
-        <tr>
-          <td>дата заезда:</td>
-          <td></td>
-          <td>дата выезда:</td>
-          <td></td>
-          <td>взрослые:</td>
-          <td></td>
-          <td></td>
-          <td></td> <!--здесь нужно сделать кнопку "НАЙТИ" как это сделать я не знаю, попробовал гуглить, но не совсем понял информацию-->
-        </tr>
-      </table>
-    </section>
+  <h1>SEDONA</h1> <!--в дальнейшем нужно скрыть-->
+<section class="features">
+  <h2 class="visuallity-hidden">Седона-небольшой городок в арезоне, заслуживающий большего!</h2>
+  <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньен!</p>
+  <ul class="features.list">
+    <li class="features.item">
+      <h3>настоящий городок </h3>
+      <p> -№1- седона-не аттракцион для туристов, там течут своя жизнь</p>
+    </li>
+    <img src="#" alt="img.town"><!--фото городка в приемуществах-->
+    <li class="features.item">
+      <h3>жилье</h3>
+      <p>рекомендуем покупать в настоящем мотеле, всё как в кино!</p>
+    </li>
+      <li class="features.item">
+      <h3>еда</h3>
+      <p>всегда заказывайте фирменные бургеры, вы не разочаруетесь!</p>
+    </li>
+    <li class="features.item">
+      <h3>сувениры</h3>
+      <p>не только китайского, но и местного производства!</p>
+    </li>
+    <img src="#" alt="img.mountain"><!--фото моста в приемуществах-->
+    <li class="features.item">
+      <h3>там есть мост дьявола</h3>
+      <p>-№2- да, по нему можно пройти если конечно вы осмелетесь</p>
+    </li>
+    <li>
+      <h3>небольшая площадь</h3>
+      <p>-№3- все достопримечательности находятся очень близко</p>
+    </li>
+    <li>
+      <h3>красивая дорога</h3>
+      <p>-№4- ехать в седону из лас-вегаса совсем не скучно!</p>
+    </li>
+    <li>
+      <h3>мало туристов</h3>
+      <p>большинство едет в гранд каньен и толпиться там</p>
+    </li>
+  </ul>
+</section>
+<section>
+  <h3 class="visuallity-hidden">заинтересовались?</h3>
+  <p>укажите предполагаемые даты поездки, и мы покажем вам предложения гостиниц в седоне</p>
+  <section class="hotels">
+    <h3 class="">поиск гостиницы в седоне</h3>
+    <!--здесь будет форма-->
+  </section>
+  </section>
 </main>
 
 <footer>
-  <section>
-    <ul class="visit.html">
-      <li><a href="#">#visitsedona</li>
-    </ul>
-    <a href="№">
-      <img class="bird" src="bird.html" alt="птица">
-    </a>
-    <a href="https://ru-ru.facebook.com/">
-      <img class="facebook" src="facebook.html" alt="соц. сеть">
-    </a>
-    <a href="https://www.youtube.com/">
-      <img class="youtube" src="youtube.html" alt="youtube">
-    </a>
-    <img class="website" src="№" alt="website by html Academy">
-  </section>
+<div class="footer-social">
+  <ul class="visit.html">
+    <li><a class="social-button" href="#">#visitsedona</li>
+    <li><a class="social-button" href="№"></a>птица</li>
+    <li><a class="social-button" href="#"></a>фейсбук</li>
+    <li><a class="social-button" href="#"></a>ютюб</li>
+    <p class="footer-copyring">
+      <b>website by</b>
+    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"></a>логотип аккадемии</li>https://htmlacademy.ru/intensive/htmlcss
+  </p>
+  </ul>
+</div>
 </footer>
-
-
-  </body>
+</body>
 </html>
