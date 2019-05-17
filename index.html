@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
 <header class="main-header">
     <nav class="main-navigation">
-      <a href="index.html" class="main-header">
-        <img src="#" width="100" height="50" alt="логотип седона">
+      <a href="#" class="main-header">
+        <img src="img/logo.png" width="100" height="50" alt="логотип седона">
       </a>
       <ul class="navigation-item">
         <li><a href="#inf">информация</a></li>
@@ -17,7 +18,7 @@
         <li><a href="catalog.html">гостиницы</a></li>
       </ul>
     </nav>
-    <img src="img/background-logo.jpg"  width="200" height="80" alt="welcome cedona">
+    <img src="img/welcome.png"  width="600" height="300" alt="welcome cedona">
 </header>
 
 
@@ -33,7 +34,7 @@
     <li class="features-item">
       <h3>настоящий городок </h3>
       <p><span>-№1-</span>седона не аттракцион для туристов, там течет своя жизнь</p>
-      <img class="feature-picture" src="img/feature-logo.png" width="200" height="80" alt="город"><!--фото городка в приемуществах-->
+      <img class="feature-picture" src="img/feature.png" width="200" height="80" alt="город"><!--фото городка в приемуществах-->
     </li>
     <li class="features-item">
       <h3>жилье</h3>
@@ -51,7 +52,7 @@
     <li class="features-item">
       <h3>там есть мост дьявола</h3>
       <p><span>-№2-</span> да, по нему можно пройти если конечно вы осмелетесь</p>
-      <img class="Layer-5" src="img/layer-logo.png" width="200" height="80" alt="мост">
+      <img class="Layer-5" src="img/gora.png" width="200" height="80" alt="мост">
     </li>
     <li>
       <h3>небольшая площадь</h3>
@@ -70,42 +71,54 @@
 <section>
   <h3 class="visuallity-hidden">заинтересовались?</h3>
   <p>укажите предполагаемые даты поездки, и мы покажем вам предложения гостиниц в седоне</p>
-  <section class="hotels">
-    <h3 class="">поиск гостиницы в седоне</h3>
-    <!--здесь будет форма-->
-  </section>
-  </section>
-</main>
+</section>
 
+<form class="form back" action="#" method="post">
+  <h3 class="serch">поиск гостиницы в седоне</h3>
+  <fieldset>
+        <p class="arriv-data">
+          <label for="arriv-data">Дата заезда:</label>
+          <input type="text" id="arriv-data" name="date"  value="24 апреля 2017">
+        </p>
+        <p class="departure">
+          <label for="departure">Дата выезда:</label>
+          <input type="text" id="departure" name="data"  value="4 июля 2017">
+        </p>
+        <p class="adults">
+          <label for="adults">Взрослые:</label>
+          <input type="text" id="adults" name="text"  value="2">
+        </p>
+        <p class="children">
+          <label for="children">Дети:</label>
+          <input type="text" id="children" name="text"  value="0">
+        </p>
+        <button class="button" type="submit">Найти</button>
+  </fieldset>
+</form>
+<div>
+  <img src="img/map.png" alt="map" width="600" height="400">
+</div>
+</main>
 <footer>
 <div class="footer-social">
+  <div class="social">
+    <p><a class="social-button" href="#">#visitSEDONA</a></p>
+  </div>
     <ul class="visit-html">
       <li>
-        <a class="social-button" href="twitter">
-          <img src="img/tw-logo.png" alt="twitter">
-        </a>
+        <a  href="https://twitter.com" aria-label="twitter">twitter</a>
       </li>
       <li>
-        <a class="social-button" href="facebook">
-          <img src="img/fb-logo.png" alt="facebook">
-        </a>
+        <a  href="https://facebook.com" aria-label="facebook">facebook</a>
       </li>
       <li>
-        <a class="social-button" href="youtube">
-          <img src="img/youtube-logo.png" alt="youtube">
-        </a>
+        <a  href="https://www.youtube.com" aria-label="youtube">youtube</a>
       </li>
     </ul>
     <p class="footer-copyring">
       <b>website by</b>
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/htmla-logo.png" alt="логотип аккадемии">
-      </a>
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy">логотип аккадемии</a>
     </p>
-
-    <div class="social">
-      <p><a class="social-button" href="#">#visitsedona</a></p>
-    </div>
 </div>
 </footer>
 </body>
