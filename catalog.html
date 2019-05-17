@@ -21,123 +21,132 @@
 </header>
 
 <main class="container">
-
-                                                      <!--<table>
-                                                        <tr>
-                                                          <th>инфраструктура</th
-                                                        </tr>
-                                                        <tr>
-                                                           <td><form action="#"><input type="checkbox" checked />Бассейн<input type="checkbox" checked />Гостиница</form></td>
-                                                        </tr>
-                                                        <tr>
-                                                           <td><form action="#"><input type="checkbox" />Парковка<input type="checkbox" checked />Мотель</form></td>
-                                                        </tr>
-                                                        <tr>
-                                                           <td><form action="#"><input type="checkbox" />Wi-Fi<input type="checkbox" checked />Апартаменты</form></td>
-                                                        </tr>
-                                                      </table>-->
-
-
-  <form action="#" method="post" oninput="daysoutput.value=dayscount.value">
+<section class="filters">
+<h2 class="visually-hidden">Фильтр</h2>
+  <form class="filter" action="#" method="get" oninput="daysoutput.value=dayscount.value">
+    <fieldset>
       <p>Инфраструктура:</p>
       <p>Тип жилья:</p>
-      <div>
-        <input type="checkbox" name="subscribe" id="appartament" checked/>
-        <label for="appartament">Апартаменты</label>
-      </div>
-      <div>
-        <input type="checkbox" name="subscribe" id="motel" checked/>
-        <label for="motel">Мотель</label>
-      </div>
-      <div>
-        <input type="checkbox" name="subscribe" id="hotels" checked/>
-        <label for="hotels">Гостиница</label>
-      </div>
-      <div>
-        <input type="checkbox" name="subscribe" id="wi-fi"/>
-        <label for="wi-fi">Wi-Fi</label>
-      </div>
-      <div>
-        <input type="checkbox" name="subscribe" id="parcing"/>
-        <label for="parcing">Парковка</label>
-      </div>
-      <div>
-        <input type="checkbox" name="subscribe" id="pool" checked/>
-        <label for="pool">Бассейн</label>
-      </div>
-      <p>Стоимость в сутки (Р):</p>
-      <div class="half-width output-area">
-          <!-- Область для вывода значения -->
-          <output name="daysoutput"></output>
-      </div>
-      <div class="half-width">
-          <label for="dayscount"></label>
-          <input type="range" id="dayscount" name="dayscount" min="0" max="4500" step="1">
-        </div>
+      <ul>
+        <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+            <label for="filter-apartments">Апартаменты</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+            <label for="filter-motel">Мотель</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+            <label for="filter-hotel">Гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name=">Wi-Fi" id="filter-Wi-Fi">
+            <label for="filter-Wi-Fi">Wi-Fi</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+            <label for="filter-parking">Парковка</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+            <label for="filter-pool">Бассейн</label>
+          </li>
+      </ul>
+        <p>Стоимость в сутки (Р):</p>
+        <div class="half-width output-area">
 
+            <output name="daysoutput"></output>
+        </div>
+        <div class="half-width">
+            <label for="dayscount"></label>
+            <input type="range" id="dayscount" name="dayscount" min="0" max="4500" step="1">
+        </div>
       <input type="submit" value="Показать">
-    </form>
+    </fieldset>
+  </form>
+</section>
 
 
-    <section class="hotels">
-      <h2 class="visuallity-hidden">гостиницы</h2>
-      <!--здесь будет форма-->
-    </section>
-    <section class="catalog">
-    <ul class="catalog-list">
-      <li class="catalog-item">
-        <h3>
-          <a href="catalog-item.html"><span class="catalog-category">Amara Resort & Spa</span></a>
-        </h3>
-        <p class="catalog-item-image">
-          <a href="catalog-item.html"><img src="img/hotel.png" alt="гостиница"  width="100" height="80" ></a>
-        </p>
-        <div class="catalog-item-price">
-          <p>гостиница</p>
-          <p>4000 ₽.</p>
-          <a class="button" href="#">подробнее</a>
-          <a class="button" href="#">забронировать</a>
-        </div>
-      </ul>
-    </section>
-    <section>
-      <ul>
+  <section class="catalog">
+    <h2 class="visually-hidden">Список доступных мест</h2>
+      <ul class="catalog-list">
         <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html"><span class="catalog-category">Desert Quail Inn</span></a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="catalog-item.html"><img src="img/motel.png" alt="мотель"  width="100" height="80" ></a>
-          </p>
-          <div class="catalog-item-price">
-            <p>мотель</p>
-            <p>3000 ₽.</p>
-            <a class="button" href="#">подробнее</a>
-            <a class="button" href="#">забронировать</a>
-            <!--НЕЗНАЮ КАК СДЕЛАТЬ РЕЙТИНГ И ЗВЕЗДОЧКИ-->
-          </div>
-        </li>
-      </ul>
+          <a href="catalog-item.html">
+            <h3>
+              <span class="catalog-category">Amara Resort & Spa</span>
+            </h3>
+              <p class="catalog-item-image">
+                <img src="img/hotel.png" alt="Гостиница Amara Resort & Spa" width="220" height="165">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+            <b>Гостиница</b>
+            <b>От 4000 Р.</b>
+            <br><a class="button-1" href="#">подробнее</a>
+                <a class="button-2" href="#">забронировать</a>
+            <div class="star-4">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+            <p>Рейтинг: 8,5</p>
+        </ul>
     </section>
-    <section>
-      <ul>
-        <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html"><span class="catalog-category">Villas at Poco Diablo</span></a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="catalog-item.html"><img src="img/appartament.png" alt="аппартаменты"  width="100" height="80" ></a>
-          </p>
-          <div class="catalog-item-price">
-            <p>аппартаменты</p>
-            <p>2000 ₽.</p>
-            <a class="button" href="#">подробнее</a>
-            <a class="button" href="#">забронировать</a>
-            <!--НЕЗНАЮ КАК СДЕЛАТЬ РЕЙТИНГ И ЗВЕЗДОЧКИ-->
-          </div>
-        </li>
-      </ul>
-    </section>
+    <hr style="border:1px solid #f1f1f1">
+    <section class="catalog-2">
+      <h2 class="visually-hidden">Список доступных мест</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-category">Desert Quail Inn</span>
+              </h3>
+                <p class="catalog-item-image">
+                  <img src="img/motel.png" alt="Мотель Desert Quail Inn" width="220" height="165">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+              <b>Мотель</b>
+              <b>От 3000 Р.</b>
+              <br><a class="button-1" href="#">подробнее</a>
+                  <a class="button-2" href="#">забронировать</a>
+              <div class="star-3">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              </div>
+              <p>Рейтинг: 8,9</p>
+          </ul>
+      </section>
+      <hr style="border:1px solid #f1f1f1">
+      <section class="catalog-3">
+        <h2 class="visually-hidden">Список доступных мест</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Desert Quail Inn</span>
+                </h3>
+                  <p class="catalog-item-image">
+                    <img src="img/appartament.png" alt="Апартаменты Villas at Poco Diablo" width="220" height="165">
+                  </p>
+                </a>
+                <p class="catalog-item-price">
+                <b>Апартаменты</b>
+                <b>От 2000 Р.</b>
+                <br><a class="button-1" href="#">подробнее</a>
+                    <a class="button-2" href="#">забронировать</a>
+                <div class="star-3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+                <p>Рейтинг: 9,2</p>
+            </ul>
+        </section>
+        <hr style="border:1px solid #f1f1f1">
 </main>
   <footer>
     <div class="footer-social">
