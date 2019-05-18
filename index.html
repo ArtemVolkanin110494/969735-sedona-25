@@ -3,19 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
 <header class="main-header">
     <nav class="main-navigation">
-      <a href="#" class="main-header">
+      <a class="main-header">
         <img src="img/logo.png" width="100" height="50" alt="логотип седона">
       </a>
       <ul class="navigation-item">
-        <li><a href="#inf">информация</a></li>
-        <li><a href="#foto">фото и видео</a></li>
-        <li><a href="#site">карта сайта</a></li>
-        <li><a href="catalog.html">гостиницы</a></li>
+        <li><a href="#">информация</a></li>
+        <li><a href="#">фото и видео</a></li>
+        <li><a href="#">карта сайта</a></li>
+        <li><a href="#">гостиницы</a></li>
       </ul>
     </nav>
     <img src="img/welcome.png"  width="600" height="300" alt="welcome cedona">
@@ -24,9 +23,9 @@
 
 
 <main class="container">
-<h1>сайт города Sedona</h1><!--в дальнейшем нужно скрыть-->
+<!--<h1>сайт города Sedona</h1>
 <section class="features">
-  <div><!--ДОБАВИЛ <div>-->
+  <div>
     <h2 class="visuallity-hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </div>
@@ -34,7 +33,7 @@
     <li class="features-item">
       <h3>настоящий городок </h3>
       <p><span>-№1-</span>седона не аттракцион для туристов, там течет своя жизнь</p>
-      <img class="feature-picture" src="img/feature.png" width="200" height="80" alt="город"><!--фото городка в приемуществах-->
+      <img class="feature-picture" src="img/feature.png" width="200" height="80" alt="город">
     </li>
     <li class="features-item">
       <h3>жилье</h3>
@@ -48,7 +47,7 @@
       <h3>сувениры</h3>
       <p>не только китайского, но и местного производства!</p>
     </li>
-    <!--фото моста в приемуществах-->
+
     <li class="features-item">
       <h3>там есть мост дьявола</h3>
       <p><span>-№2-</span> да, по нему можно пройти если конечно вы осмелетесь</p>
@@ -67,30 +66,37 @@
       <p>большинство едет в гранд каньен и толпиться там</p>
     </li>
   </ul>
-</section>
+</section>-->
+
+
 <section>
   <h3 class="visuallity-hidden">заинтересовались?</h3>
-  <p>укажите предполагаемые даты поездки, и мы покажем вам предложения гостиниц в седоне</p>
+  <p>укажите предполагаемые даты поездки,<br>и мы покажем вам предложения гостиниц в седоне</p>
 </section>
 
-<form class="form back" action="#" method="post">
-  <h3 class="serch">поиск гостиницы в седоне</h3>
+<button class="serch" name="serch-hotel" value="serch-hotel" type="submit">поиск гостиницы в седоне</button>
+
+<form class="form back" action="http://echo.htmlacademy.ru" method="post">
   <fieldset>
         <p class="arriv-data">
           <label for="arriv-data">Дата заезда:</label>
-          <input type="text" id="arriv-data" name="date"  value="24 апреля 2017">
+          <input type="date" id="arriv-data" name="data" value="2017-04-24">
         </p>
         <p class="departure">
           <label for="departure">Дата выезда:</label>
-          <input type="text" id="departure" name="data"  value="4 июля 2017">
+          <input type="date" id="departure" name="data"  value="2017-05-04">
         </p>
         <p class="adults">
           <label for="adults">Взрослые:</label>
-          <input type="text" id="adults" name="text"  value="2">
+          <input   type="text" id="adults" name="text"  value="2">
+          <button  type="button" name="minus">-</button>
+          <button  type="button" name="plus">+</button>
         </p>
         <p class="children">
           <label for="children">Дети:</label>
-          <input type="text" id="children" name="text"  value="0">
+          <input  type="text" id="children" name="text"  value="0">
+          <button type="button" name="minus">-</button>
+          <button type="button" name="plous">+</button>
         </p>
         <button class="button" type="submit">Найти</button>
   </fieldset>
