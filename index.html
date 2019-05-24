@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <title>Главная страница сайта Седона</title>
   </head>
 
@@ -28,6 +29,10 @@
 
 
   <main class="container">
+    <div class="advantages">
+      <p class="advantages1">седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="advantages2">рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
 <!--<h1>сайт города Sedona</h1>
 <section class="features">
   <div>
@@ -81,31 +86,32 @@
 
 <button class="serch" name="serch-hotel" value="serch-hotel" type="button">поиск гостиницы в седоне</button>
 
-<form class="form back" action="http://echo.htmlacademy.ru" method="post">
+<form class="form-back" action="http://echo.htmlacademy.ru" method="post">
   <fieldset>
         <p class="arriv-data">
           <label for="arriv-data">Дата заезда:</label>
-          <input type="text" id="arriv-data" name="text" value="24 апреля 2017">
+          <input class="data" type="text" id="arriv-data" name="text" placeholder="24 АПРЕЛЯ 2017">
           <button type="button" name="button" value="data">календарь</button>
         </p>
         <p class="departure">
           <label for="departure">Дата выезда:</label>
-          <input type="text" id="departure" name="text"  value="4 июля 2017">
+          <input class="data" type="text" id="departure" name="text"  placeholder="4 ИЮЛЯ 2017">
           <button type="button" name="button" value="data">календарь</button>
         </p>
         <p class="adults">
           <label for="adults">Взрослые:</label>
-          <input   type="text" id="adults" name="text"  value="2">
+          <input class="nambe"   type="text" id="adults" name="text"  placeholder="2">
           <button  type="button" name="minus">-</button>
           <button  type="button" name="plus">+</button>
         </p>
         <p class="children">
           <label for="children">Дети:</label>
-          <input  type="text" id="children" name="text"  value="0">
+          <input class="nambe" type="text" id="children" name="text"  placeholder="0">
           <button type="button" name="minus">-</button>
           <button type="button" name="plous">+</button>
         </p>
-        <button class="button" type="submit">Найти</button>
+
+        <button class="button-serch" type="submit">найти</button>
   </fieldset>
 </form>
 <div>
@@ -123,8 +129,8 @@
       <li><a  href="https://www.youtube.com" aria-label="youtube">youtube</a></li>
     </ul>
     <p class="footer-copyring">
-      <b>website by</b>
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy">логотип аккадемии</a>
+      <p>website by</p>
+      <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy">логотип аккадемии</a>
     </p>
 </div>
 </footer>
