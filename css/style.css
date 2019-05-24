@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+}
+
+header {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+
+  width: 1200px;
+  height: 773px;
+
+  background-color: #ffffff;
+  background-image: url(../img/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.interested {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.go {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.brown-button {
+  background: #81b3d2;
+  background-color: #766357;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-header {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: white;
+}
+
+.itog input {
+  font-family: 'PT Sans-Bold', Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.sorting {
+  font-family: 'PT Sans-Bold', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+}
+
+.sorting button {
+  font-family: 'PT Sans-Bold', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #81b3d2;
+
+  border: 0;
+  background: #ffffff;
+}
+
+.sorting button:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+li {
+  list-style-type: none;
+}
+
+.catalog-category a {
+  font-family: 'PT Sans-Bold', Arial, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;
+  letter-spacing: normal;
+}
+
+.catalog-item-price {
+  font-family: 'PT Sans-Bold', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.button-1 {
+ background-color: #81b3d2;
+
+ font-family: 'PT Sans', Arial, sans-serif;
+ font-size: 14px;
+ font-weight: bold;
+ line-height: 21px;
+ color: #ffffff;
+}
+
+.button-2 {
+  background-color: #766357;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.raiting {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  letter-spacing: normal;
+
+  background-color: #f2f2f2;
+}
+
+.navigation-item,
+.visit-html {
+  list-style: none;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.navigation-item a,
+.visit-html a {
+  color: #000000;
+}
+
+.welcome img {
+  width: 300px;
+  height: 200px;
+}
+
+.footer-social a {
+  color: #000000;
+}
+
+.footer-copyring {
+  font-family: 'PT Sans-Bold', Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+
+  letter-spacing: normal;
+}
+
+.social {
+  font-size: 'PT Sans-Bold', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+
+  letter-spacing: normal;
+}

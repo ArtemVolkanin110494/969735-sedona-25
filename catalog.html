@@ -2,23 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог сайта Седона</title>
-    <link rel="stylesheet" href="/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Главная страница сайта Седона</title>
   </head>
+
   <body>
-<header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header">
-        <img src="img/logo.png" width="100" height="50" alt="логотип сайта седона">
-      </a>
-      <ul class="navigation-item">
-        <li><a href="#">информация</a></li>
-        <li><a href="#">фото и видео</a></li>
-        <li><a href="#">карта сайта</a></li>
-        <li><a href="#">гостиницы</a></li>
-      </ul>
-    </nav>
-</header>
+  <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-logo">
+          <img src="img/logo.png" alt="логотип сайта седона">
+        </a>
+        <ul class="navigation-item">
+          <li><a href="#">информация</a></li>
+          <li><a href="#">фото и видео</a></li>
+          <li><a href="#">карта сайта</a></li>
+          <li><a href="#">гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="welcome">
+        <img src="img/welcome.png"  alt="добро пожаловать в седону">
+      </div>
+  </header>
 
 <main class="container">
 <!--<section class="filters">
@@ -67,78 +72,82 @@
   </form>
 </section>-->
 
-  <section class="catalog">
-    <h2 class="visually-hidden">Список доступных мест</h2>
-      <ul class="catalog-list">
+<section class="catalog">
+  <div class="itog">
+    <input type="text" name="itog" value="НАЙДЕНО: 3">
+  </div>
+  <div class="sortirovka">
+  <ul class="sorting-button">
+    <li class="sorting">
+      <p>сортировка:</p>
+    </li>
+    <li class="sorting">
+      <button type="button" name="button">По цене</button>
+    </li>
+    <li class="sorting">
+      <button type="button" name="button">По типу</button>
+    </li>
+    <li class="sorting">
+      <button type="button" name="button">По рейтингу</button>
+    </li>
+  </ul>
+  </div>
+  <ul class="catalog-list">
         <li class="catalog-item">
-            <h3>
               <span class="catalog-category"><a href="#">Amara Resort & Spa</a></span>
-            </h3>
               <p class="catalog-item-image">
                 <img src="img/hotel.png" alt="Гостиница Amara Resort & Spa" width="220" height="165">
               </p>
-            <p class="catalog-item-price">
-            <b>Гостиница</b>
-            <b>От 4000 Р.</b>
-            <a class="button-1" href="#">подробнее</a>
-            <a class="button-2" href="#">забронировать</a>
-            <div class="star-4">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            </div>
-            <p>Рейтинг: 8,5</p>
-        </ul>
-    </section>
-    <section class="catalog-2">
-      <h2 class="visually-hidden">Список доступных мест</h2>
-        <ul class="catalog-list">
-            <li>
-              <h3>
-                <span class="catalog-category"><a href="#">Desert Quail Inn</a></span>
-              </h3>
+              <p class="catalog-item-price">
+                <b>Гостиница</b>
+                <b>От 4000 Р.</b>
+              </p>
+                <a class="button-1" href="#">подробнее</a>
+                <a class="button-2" href="#">забронировать</a>
+              <div class="star-4">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              </div>
+              <p class="raiting">Рейтинг: 8,5</p>
+
+              <span class="catalog-category"><a href="#">Desert Quail Inn</a></span>
               <p class="catalog-item-image">
                 <img src="img/motel.png" alt="Мотель Desert Quail Inn" width="220" height="165">
               </p>
-              <b>Мотель</b>
-              <a class="button-1" href="#">подробнее</a>
-              <a class="button-2" href="#">забронировать</a>
+              <p class="catalog-item-price">
+                <b>Апартаменты</b>
+                <b>От 3000 Р.</b>
+              </p>
+                <a class="button-1" href="#">подробнее</a>
+                <a class="button-2" href="#">забронировать</a>
               <div class="star-3">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               </div>
-              <p>Рейтинг: 8,9</p>
-            </li>
-          </ul>
-      </section>
-      <section class="catalog-3">
-        <h2 class="visually-hidden"><a href="#">Список доступных мест</a></h2>
-          <ul class="catalog-list">
-            <li class="catalog-item">
-              <a href="catalog-item.html">
-                <h3>
-                  <span class="catalog-category">Desert Quail Inn</span>
-                </h3>
-                  <p class="catalog-item-image">
-                    <img src="img/appartament.png" alt="Апартаменты Villas at Poco Diablo" width="220" height="165">
-                  </p>
-                </a>
-                <p class="catalog-item-price">
+              <p class="raiting">Рейтинг: 8,9</p>
+
+              <span class="catalog-category"><a href="#">Villas at Poco Diablo</a></span>
+              <p class="catalog-item-image">
+                <img src="img/appartament.png" alt="Апартаменты Villas at Poco Diablo" width="220" height="165">
+              </p>
+              <p class="catalog-item-price">
                 <b>Апартаменты</b>
                 <b>От 2000 Р.</b>
+              </p>
                 <a class="button-1" href="#">подробнее</a>
                 <a class="button-2" href="#">забронировать</a>
-                <div class="star-3">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
-                <p>Рейтинг: 9,2</p>
-              </li>
-            </ul>
-        </section>
+              <div class="star-3">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              </div>
+              <p class="raiting">Рейтинг: 9,2</p>
+        </li>
+      </ul>
+    </section>
 </main>
   <footer>
     <div class="footer-social">

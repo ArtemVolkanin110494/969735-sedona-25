@@ -2,27 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Главная страница сайта Седона</title>
   </head>
+
   <body>
-<header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header">
-        <img src="img/logo.png" width="100" height="50" alt="логотип сайта седона">
-      </a>
-      <ul class="navigation-item">
-        <li><a href="#">информация</a></li>
-        <li><a href="#">фото и видео</a></li>
-        <li><a href="#">карта сайта</a></li>
-        <li><a href="#">гостиницы</a></li>
-      </ul>
-    </nav>
-    <img src="img/welcome.png"  width="600" height="300" alt="добро пожаловать в седону">
-</header>
+  <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-logo">
+          <img src="img/logo.png" alt="логотип сайта седона">
+        </a>
+        <ul class="navigation-item">
+          <li><a href="#">информация</a></li>
+          <li><a href="#">фото и видео</a></li>
+          <li><a href="#">карта сайта</a></li>
+          <li><a href="#">гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="welcome">
+        <img src="img/welcome.png"  alt="добро пожаловать в седону">
+      </div>
+  </header>
 
 
 
-<main class="container">
+  <main class="container">
 <!--<h1>сайт города Sedona</h1>
 <section class="features">
   <div>
@@ -69,9 +74,9 @@
 </section>-->
 
 
-<section>
-  <h3 class="visuallity-hidden">заинтересовались?</h3>
-  <p>укажите предполагаемые даты поездки,<br>и мы покажем вам предложения гостиниц в седоне</p>
+<section class="brown-button">
+  <h3 class="interested">заинтересовались?</h3>
+  <p class="go">укажите предполагаемые даты поездки,<br>и мы покажем вам предложения гостиниц в седоне</p>
 </section>
 
 <button class="serch" name="serch-hotel" value="serch-hotel" type="button">поиск гостиницы в седоне</button>
@@ -104,13 +109,13 @@
   </fieldset>
 </form>
 <div>
-  <img src="img/map.png" alt="map" width="600" height="400" фalt="карта маршрута, как можно доехать в седону">
+  <img src="img/map.png" width="600" height="400" alt="карта маршрута, как можно доехать в седону">
 </div>
 </main>
 <footer>
 <div class="footer-social">
   <div class="social">
-    <p><a class="social-button" href="#">#visitSEDONA</a></p>
+    <p>#visitSEDONA</p>
   </div>
     <ul class="visit-html">
       <li><a  href="https://twitter.com" aria-label="twitter">twitter</a></li>
