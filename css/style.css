@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-style: normal;
@@ -40,7 +40,7 @@ header {
   line-height: 26px;
   color: #000000;
 
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .advantages1 {
@@ -79,7 +79,7 @@ header {
 
 .serch {
   background-color: #766357;
-
+  font-family: inherit;
   font-size: 21px;
   font-weight: bold;
   font-style: normal;
@@ -167,7 +167,7 @@ a {
 }
 
 .sorting button:hover {
-  color: rgba(0, 0, 0, 0.3);
+  color: #b3b3b3;
 }
 
 li {
@@ -247,10 +247,11 @@ li {
   color: #000000;
 }
 
-.social {
-   font-size: 21px;
-   line-height: 26px;
-   font-weight: bold;
-   font-style: normal;
-   font-stretch: normal;
+.social p {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;
   }
