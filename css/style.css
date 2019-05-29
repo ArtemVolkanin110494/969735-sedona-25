@@ -1,23 +1,102 @@
 body {
-  margin: 0;
-  padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-style: normal;
   font-stretch: normal;
   text-transform: uppercase;
+
+  width: 0 auto;
+
+  display: flex;
+  align-items: stretch;
+
+  justify-content: space-around;
+  flex-wrap: wrap;/*разрешает перенос на новую строку*/
+  /*flex-direction: column;/*направление главной оси*/
+  /*justify-content: center;/*распределения элементов вдоль главной оси*/
+  /*align-items: center;/*выравнивания элементов вдоль поперечной оси*/
 }
 
+/*body > *{
+  background: rgba(255, 0, 0, 0.23);
+}
+
+body > * > *{
+  background: rgba(255, 0, 255, 0.3);
+}
+
+body > * > * > *{
+  background: rgba(255, 0, 255, 0.3);
+}*/
+
 header {
+  margin: auto;
+
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
-
   background-image: url(../img/background.jpg);
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+main {
+  margin: 0 auto;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+.main-navigation {
+  width: auto;
+  height: 56px;
+  background-color: #000000;
+}
+
+
+/*.main-logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lo-go {
+  width: 140px;
+  height: 71px;
+}
+
+.navigation-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}*/
+
+.inf {
+
+}
+
+.video  {
+
+}
+
+.map-to  {
+
+}
+
+.hostel-to  {
+
+}
+
+/*сетка для каталога*/
+.container {
+  display: f
+
+}
+
+.navigation-item a:hover {
+  color: #81b3d2
 }
 
 .navigation-item,
@@ -28,6 +107,7 @@ header {
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
+
 }
 
 .navigation-item a,
@@ -36,13 +116,10 @@ header {
 }
 
 .main-header {
-  font-size: 14px;
-  line-height: 26px;
   color: #000000;
-
-  background-color: #ffffff;
 }
 
+}
 .advantages1 {
   font-size: 21px;
   font-weight: bold;
@@ -127,7 +204,7 @@ header {
 }
 
 a {
-  text-decoration: none;
+text-decoration: none;
   color: #000000;
 }
 
