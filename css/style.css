@@ -40,8 +40,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  mix-width: 140px;
   max-height: 71px;
+
 }
 
 .lo-go {
@@ -54,12 +54,49 @@ header {
   background-color: #ffffff;
 }
 
+
 .navigation-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
 }
+
+.inf {
+  flex:  0 0 239px;
+  height: 56px;
+  text-align: center;
+  padding-top: 28px;
+  margin-left: -40px;
+}
+
+.video {
+  flex:  0 0 239px;
+  height: 56px;
+  text-align: center;
+  padding-top: 28px;
+  margin-left: -220px;
+
+}
+
+.map-card {
+  flex:  0 0 239px;
+  height: 56px;
+  text-align: center;
+  padding-top: 28px;
+  margin-right: -230px;
+}
+
+.hostel {
+  flex:  0 0 239px;
+  height: 56px;
+  text-align: center;
+  padding-top: 28px;
+  margin-right: 0;
+}
+
+
+
 
 .hostel-to {
   margin-right: 40px;
@@ -119,6 +156,35 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-1 {
+  display: flex;
+
+
+}
+
+.column-2 {
+  display: flex;
+
+
+}
+
+.column-3 {
+  display: flex;
+
+
+}
+
+.column-1-2 {
+  flex-grow: 1;
+}
+
+
 
 .itog {
   display: flex;
