@@ -20,10 +20,10 @@
 
           <div class="navigation">
             <ul class="navigation-item">
-              <li class="inf"><a href="#">информация</a></li>
-              <li class="video"><a href="#">фото и видео</a></li>
-              <li class="map-card "><a href="#">карта сайта</a></li>
-              <li class="hostel"><a href="catalog.html">гостиницы</a></li>
+              <li class="inf"><a class="in" href="#">информация</a></li>
+              <li class="video"><a class="in" href="#">фото и видео</a></li>
+              <li class="map-card"><a class="in" href="#">карта сайта</a></li>
+              <li class="hostel"><a class="in" href="catalog.html">гостиницы</a></li>
             </ul>
           </div>
         </nav>
@@ -83,66 +83,69 @@
       </section>-->
 
   <section class="brown-button">
+    <div class="fon-block">
+      <img class="polygon" src="img/polygon.svg"
+     class="polygon">
+    </div>
         <div class="advantages">
-          <p class="advantages1">седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="advantages1">седона — небольшой городок в Аризоне, <br>заслуживающий большего!</p>
           <p class="advantages2">рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-        <h3 class="interested">заинтересовались?</h3>
+
         <div class="go-data">
-          <p class="go">укажите предполагаемые даты поездки,</br>и мы покажем вам предложения гостиниц в седоне</p>
+          <h3 class="interested">заинтересовались?</h3>
+          <p class="go">укажите предполагаемые даты поездки, <br>и мы покажем вам предложения гостиниц в седоне</p>
         </div>
-        <button class="serch" name="serch-hotel" value="serch-hotel" type="button">поиск гостиницы в седоне</button>
-
+        <div class="serch">
+          <button class="serch-buttom" name="serch-hotel" value="serch-hotel" type="button"></button>
+        </div>
         <form class="form-back" action="http://echo.htmlacademy.ru" method="post">
-          <fieldset>
-                <p class="arriv-data">
-                  <label for="arriv-data">Дата заезда:</label>
-                  <input class="data" type="text" id="arriv-data" name="text" placeholder="24 АПРЕЛЯ 2017">
-                  <button type="button" name="button" value="data">календарь</button>
-                </p>
-                <p class="departure">
-                  <label for="departure">Дата выезда:</label>
-                  <input class="data" type="text" id="departure" name="text"  placeholder="4 ИЮЛЯ 2017">
-                  <button type="button" name="button" value="data">календарь</button>
-                </p>
-                <p class="adults">
-                  <label for="adults">Взрослые:</label>
-                  <input class="nambe"   type="text" id="adults" name="text"  placeholder="2">
-                  <button  type="button" name="minus">-</button>
-                  <button  type="button" name="plus">+</button>
-                </p>
-                <p class="children">
-                  <label for="children">Дети:</label>
-                  <input class="nambe" type="text" id="children" name="text"  placeholder="0">
-                  <button type="button" name="minus">-</button>
-                  <button type="button" name="plous">+</button>
-                </p>
+                <div class="arriv">
+                  <label class="arriv-data1" for="arriv-data">Дата заезда:</label>
+                  <input class="data1" type="text" id="arriv-data" name="text" placeholder="24 АПРЕЛЯ 2017"/>
+                  <button class="block-calendar1" type="button" name="button" value="data"><img src="img/calendar.svg" class="calendar"></button>
 
-                <button class="button-serch" type="submit">найти</button>
-            </fieldset>
+                </div>
+                <div class="arriv arriv2">
+                  <label class="arriv-data2" for="departure">Дата выезда:</label>
+                  <input class="data2" type="text" id="departure" name="text"  placeholder="4 ИЮЛЯ 2017"/>
+                  <button class="block-calendar2" type="button" name="button" value="data"><img src="img/calendar.svg" class="calendar"></button>
+
+                </div>
+                <div class="people1">
+                  <label for="adults">Взрослые:</label>
+                  <input class="nambe to order1"   type="text" id="adults" name="text"  placeholder="2"/>
+                  <button class="order2 to minus" type="button" name="minus">-</button>
+                  <button class="order3 to plus" type="button" name="plus">+</button>
+                </div>
+                <div class="people2">
+                  <label for="children">Дети:</label>
+                  <input class="nambe to order1" type="text" id="children" name="text"  placeholder="0"/>
+                  <button class="order2 to to1 minus" type="button" name="minus">-</button>
+                  <button class="order3 to plus" type="button" name="plus">+</button>
+                </div>
+                <div class="btn-srch">
+                  <button class="button-serch" type="submit">найти</button>
+                </div>
           </form>
     </section>
       <div class="map">
-        <img src="img/map.png" width="600" height="400" alt="карта маршрута, как можно доехать в седону">
+        <img src="img/map.png" width="600" height="400" alt="карта маршрута, как можно доехать в седону"/>
       </div>
     </main>
     <footer class="footer-flex">
-
           <div class="social">
             <p>#visitSEDONA</p>
           </div>
-
           <ul class="visit-html">
-            <li><a href="https://twitter.com" aria-label="twitter">twitter</a></li>
-            <li><a href="https://facebook.com" aria-label="facebook">facebook</a></li>
-            <li><a href="https://www.youtube.com" aria-label="youtube">youtube</a></li>
+            <li><a  href="https://twitter.com" aria-label="twitter"><img class="tw" src="img/tw.png"/></a></li>
+            <li><a  href="https://facebook.com" aria-label="facebook"><img class="fb" src="img/fb.png"/></a></li>
+            <li><a  href="https://www.youtube.com" aria-label="youtube"><img class="you" src="img/youtube.png"/></a></li>
           </ul>
-
           <div class="footer-copyring">
             <p>website by</p>
-            <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy">логотип аккадемии</a>
+            <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy"><img class="htmla" src="img/htmla.png"/></a>
           </div>
-
     </footer>
   </div>
 </body>
