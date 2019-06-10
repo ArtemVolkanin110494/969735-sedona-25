@@ -7,146 +7,161 @@
     <link href="css/style.css" rel="stylesheet"/>
     <title>Главная страница сайта Седона</title>
   </head>
-
   <body>
-<div class="container-flex">
     <header class="main-header">
-        <nav class="main-navigation">
-          <div class="logo">
-            <a class="main-logo">
-              <img class="lo-go" src="img/logo.png" alt="логотип сайта седона">
-            </a>
-          </div>
-
-          <div class="navigation">
-            <ul class="navigation-item">
-              <li class="inf"><a class="in" href="#">информация</a></li>
-              <li class="video"><a class="in" href="#">фото и видео</a></li>
-              <li class="map-card"><a class="in" href="#">карта сайта</a></li>
-              <li class="hostel"><a class="in" href="catalog.html">гостиницы</a></li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="welcome">
-          <img src="img/welcome.png"  alt="добро пожаловать в седону">
+        <div class="container-flex">
+            <nav class="main-navigation">
+              <div class="logo">
+                <a class="main-logo" href="#">
+                  <img class="lo-go" src="img/logo.png" alt="логотип сайта седона">
+                </a>
+              </div>
+              <div class="navigation">
+                <ul class="navigation-item">
+                  <li class="inf hover active visited"><a class="in" href="#">информация</a></li>
+                  <li class="video hover active visited"><a class="in" href="#">фото и видео</a></li>
+                  <li class="map-card hover active visited"><a class="in" href="#">карта сайта</a></li>
+                  <li class="hostel hover active visited"><a class="in" href="catalog.html">гостиницы</a></li>
+                </ul>
+                <div class="fon-block">
+                  <img class="polygon" src="img/polygon.svg" alt="">
+                </div>
+              </div>
+            </nav>
+            <div class="welcome">
+              <img src="img/welcome.png"  alt="добро пожаловать в седону">
+            </div>
         </div>
 
-    </header>
-
-
+      </header>
     <main class="container">
-
-      <!--<h1>сайт города Sedona</h1>
-      <section class="features">
-        <div>
-          <h2 class="visuallity-hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-        <ul class="features-list">
-          <li class="features-item">
-            <h3>настоящий городок </h3>
-            <p><span>-№1-</span>седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="feature-picture" src="img/feature.png" width="200" height="80" alt="город">
-          </li>
-          <li class="features-item">
-            <h3>жилье</h3>
-            <p>рекомендуем покупать в настоящем мотеле, всё как в кино!</p>
-          </li>
-            <li class="features-item">
-            <h3>еда</h3>
-            <p>всегда заказывайте фирменные бургеры, вы не разочаруетесь!</p>
-          </li>
-          <li class="features-item">
-            <h3>сувениры</h3>
-            <p>не только китайского, но и местного производства!</p>
-          </li>
-
-          <li class="features-item">
-            <h3>там есть мост дьявола</h3>
-            <p><span>-№2-</span> да, по нему можно пройти если конечно вы осмелетесь</p>
-            <img class="Layer-5" src="img/gora.png" width="200" height="80" alt="мост">
-          </li>
-          <li>
-            <h3>небольшая площадь</h3>
-            <p><span>-№3-</span> все достопримечательности находятся очень близко</p>
-          </li>
-          <li>
-            <h3>красивая дорога</h3>
-            <p><span>-№4-</span> ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li>
-            <h3><span>-5-</span>мало туристов</h3>
-            <p>большинство едет в гранд каньен и толпиться там</p>
-          </li>
-        </ul>
-      </section>-->
-
-  <section class="brown-button">
-    <div class="fon-block">
-      <img class="polygon" src="img/polygon.svg"
-     class="polygon">
-    </div>
+      <div class="prevu">
         <div class="advantages">
           <p class="advantages1">седона — небольшой городок в Аризоне, <br>заслуживающий большего!</p>
           <p class="advantages2">рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-
-        <div class="go-data">
-          <h3 class="interested">заинтересовались?</h3>
-          <p class="go">укажите предполагаемые даты поездки, <br>и мы покажем вам предложения гостиниц в седоне</p>
-        </div>
-        <div class="serch">
-          <button class="serch-buttom" name="serch-hotel" value="serch-hotel" type="button"></button>
-        </div>
-        <form class="form-back" action="http://echo.htmlacademy.ru" method="post">
+      </div>
+      <h1>сайт города Sedona</h1>
+      <section class="features">
+        <ul class="features-list">
+          <li class="features-item-1">
+            <div class="real-town-one">
+              <p><h3>настоящий<br>городок</h3><span>-№1-</span>седона не аттракцион для туристов,<br>там течет своя жизнь</p>
+            </div>
+            <div class="feature-pic-one">
+              <img class="feature-picture" src="img/feature-picture.jpg" alt="город">
+            </div>
+          </li>
+          <li class="features-item-one-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="72" viewBox="0 0 75 72">
+                <g fill="#81B3D2">
+                    <path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z"/>
+                    <path d="M72.771 39.253l2.076-2.068-9.908-9.865V0H51.127v13.567L37.5 0 .152 37.185l2.077 2.068 7.832-7.795v37.618H6.124V72h63.875v-2.924H64.94V31.458l7.831 7.795zM62.002 69.076H12.999V28.534L37.5 4.149l24.502 24.385v40.542zm0-44.682l-7.938-7.902V2.924h7.938v21.47z"/>
+                    <path d="M29.906 27.08c0 4.261 3.47 7.713 7.75 7.713 4.279 0 7.75-3.452 7.75-7.713 0-4.259-3.471-7.713-7.75-7.713-4.281 0-7.75 3.454-7.75 7.713zm7.75-4.945c2.744 0 4.969 2.214 4.969 4.945 0 2.732-2.225 4.948-4.969 4.948-2.746 0-4.97-2.216-4.97-4.948 0-2.731 2.225-4.945 4.97-4.945zM17.061 41.21h3v3.919h-3zM22.999 41.21h3v3.919h-3zM17.061 47.182h3v3.919h-3zM22.999 47.182h3v3.919h-3zM48.998 41.21h3v3.919h-3zM54.936 41.21h3v3.919h-3zM48.998 47.182h3v3.919h-3zM54.936 47.182h3v3.919h-3z"/>
+                </g>
+            </svg>
+            <h3>жилье</h3>
+            <p>рекомендуем покупать в настоящем<br>мотеле, всё как в кино!</p>
+          </li>
+          <li class="features-item-wto-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="70" viewBox="0 0 74 70">
+                <g fill="#81B3D2">
+                    <path d="M69.854 46.71H4.051c-2.274 0-4.135 1.94-4.135 4.313v3.504c0 2.372 1.861 4.313 4.135 4.313h.93v1.053c0 5.536 4.341 10.065 9.648 10.065h44.646c5.306 0 9.648-4.529 9.648-10.065V58.84h.93c2.274 0 4.135-1.941 4.135-4.313v-3.504c0-2.373-1.86-4.313-4.134-4.313zm-3.848 13.184c0 3.871-3.019 7.021-6.73 7.021H14.629c-3.711 0-6.731-3.15-6.731-7.021v-1.053h58.107v1.053zm5.065-5.367c0 .688-.558 1.271-1.218 1.271H4.051c-.66 0-1.217-.582-1.217-1.271v-3.504c0-.688.558-1.271 1.217-1.271h65.802c.66 0 1.218.582 1.218 1.271v3.504zM15.634 38.406l5.323 4.059 5.326-4.059 5.328 4.059 5.328-4.059 5.328 4.059 5.329-4.059 5.327 4.059 5.33-4.06 5.336 4.059 6.194-4.712-1.72-2.459-4.474 3.403-5.336-4.057-5.33 4.056-5.327-4.057-5.329 4.057-5.328-4.057-5.328 4.057-5.328-4.057-5.325 4.057-5.323-4.057-5.327 4.057-4.467-3.401-1.721 2.457 6.188 4.714zM7.978 31.544H68.855c.041-.619.069-1.241.069-1.87 0-.394-.016-.783-.032-1.173C68.227 12.657 54.186 0 36.952 0 19.719 0 5.677 12.657 5.013 28.501c-.017.39-.032.78-.032 1.173 0 .629.028 1.251.07 1.87h2.927zM36.952 3.043c15.591 0 28.35 11.316 29.021 25.458H7.931c.673-14.142 13.43-25.458 29.021-25.458z"/>
+                    <ellipse cx="36.952" cy="15.26" rx="1.945" ry="2.03"/>
+                    <ellipse cx="29.172" cy="10.23" rx="1.946" ry="2.03"/>
+                    <ellipse cx="44.732" cy="10.23" rx="1.946" ry="2.03"/>
+                </g>
+            </svg>
+            <h3>еда</h3>
+            <p>всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+          </li>
+          <li class="features-item-three-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="76" viewBox="0 0 64 76">
+                <path fill="#81B3D2" fill-rule="evenodd" d="M61.097 22.501H36.312C50.125 15.602 51.229 11.25 50.72 8.816c-1.162-3.963-5.692-7.023-10.002-5.407-5.569 2.089-7.137 10.388-8.644 16.387-1.924-6.07-3.784-13.814-8.136-17.737C22.677.921 20.843-.205 18.175.031c-4.026.356-9.802 5.382-7.458 10.981 2.251 5.378 9.687 8.777 14.578 11.489H2.879A2.882 2.882 0 0 0 0 25.37v11.322a2.882 2.882 0 0 0 2.879 2.869h.274V76h57.841V39.561h.103a2.882 2.882 0 0 0 2.88-2.869V25.37a2.882 2.882 0 0 0-2.88-2.869zM42.413 5.944c2.103-.31 4.982 1.299 5.255 3.209.393 2.756-3.4 5.255-5.086 6.421-2.523 1.744-4.928 2.643-7.287 4.055.884-3.69 2.549-13.011 7.118-13.685zm-22.882 9.968c-2.225-1.485-6.544-4.431-6.44-7.771.112-3.595 5.743-6.57 8.814-3.886 3.856 3.371 5.713 11.105 7.119 16.557-3.249-1.539-6.328-2.788-9.493-4.9zm5.972 57.114H6.136V39.561h19.368v33.465zm0-36.502H3.046V25.538h22.457v10.986zm10.157 0v36.503h-7.174V25.538h7.174v10.986zm22.351 36.502H38.644V39.561h19.367v33.465zm2.92-36.502H38.644V25.538h22.287v10.986z" clip-rule="evenodd"/>
+            </svg>
+            <h3>сувениры</h3>
+            <p>не только китайского, но и местного<br>производства!</p>
+          </li>
+          <li class="features-item-2">
+            <div class="real-town-two">
+              <p><h3>там есть<br>мост дьявола</h3><span>-№2-</span> да, по нему можно пройти если конечно<br>вы осмелетесь</p>
+            </div>
+            <div class="feature-pic-two">
+              <img class="Layer-5" src="img/layer-5.jpg" width="800" height="256" alt="мост">
+            </div>
+          </li>
+          <li class="features-item-four-line">
+            <p><h3>небольшая<br>площадь</h3><span>-№3-</span> все достопримечательности<br>находятся очень близко</p>
+          </li>
+          <li class="features-item-five-line">
+            <p><h3>красивая<br>дорога</h3><span>-№4-</span> ехать в седону из лас-вегаса совсем<br>не скучно!</p>
+          </li>
+          <li class="features-item-six-line">
+            <p><h3>мало<br>туристов</h3><span>-№5-</span>большинство едет в гранд каньен<br>и толпиться там</p>
+          </li>
+        </ul>
+      </section>
+  <section class="brown-button">
+    <div class="go-data">
+      <h3 class="interested">заинтересовались?</h3>
+        <p class="go">укажите предполагаемые даты поездки, <br>и мы покажем вам предложения гостиниц в седоне</p>
+      </div>
+      <div class="serch">
+        <button class="serch-buttom" name="serch-hotel" value="serch-hotel" type="button"></button>
+      </div>
+      <form class="form-back sub-form-back" action="http://echo.htmlacademy.ru" method="post">
                 <div class="arriv">
                   <label class="arriv-data1" for="arriv-data">Дата заезда:</label>
                   <input class="data1" type="text" id="arriv-data" name="text" placeholder="24 АПРЕЛЯ 2017"/>
-                  <button class="block-calendar1" type="button" name="button" value="data"><img src="img/calendar.svg" class="calendar"></button>
+                  <button class="block-calendar-one" type="button" name="button" value="data"><svg class="calendar-one" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                      <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                  </svg></button>
 
                 </div>
                 <div class="arriv arriv2">
                   <label class="arriv-data2" for="departure">Дата выезда:</label>
                   <input class="data2" type="text" id="departure" name="text"  placeholder="4 ИЮЛЯ 2017"/>
-                  <button class="block-calendar2" type="button" name="button" value="data"><img src="img/calendar.svg" class="calendar"></button>
+                  <button class="block-calendar-two" type="button" name="button" value="data"><svg class="calendar-two" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                      <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                  </svg></button>
 
                 </div>
                 <div class="people1">
                   <label for="adults">Взрослые:</label>
                   <input class="nambe to order1"   type="text" id="adults" name="text"  placeholder="2"/>
-                  <button class="order2 to minus" type="button" name="minus">-</button>
-                  <button class="order3 to plus" type="button" name="plus">+</button>
+                  <button class="order2 to to1 minus" type="button" name="minus">
+                  <button class="order3 to plus" type="button" name="plus"></button>
                 </div>
                 <div class="people2">
                   <label for="children">Дети:</label>
                   <input class="nambe to order1" type="text" id="children" name="text"  placeholder="0"/>
-                  <button class="order2 to to1 minus" type="button" name="minus">-</button>
-                  <button class="order3 to plus" type="button" name="plus">+</button>
+                  <button class="order2 to to1 minus" type="button" name="minus-svg"></button>
+                  <button class="order3 to plus" type="button" name="plus"></button>
                 </div>
                 <div class="btn-srch">
-                  <button class="button-serch" type="submit">найти</button>
+                  <button class="button-serch" type="submit">НАЙТИ</button>
                 </div>
           </form>
-    </section>
-      <div class="map">
-        <img src="img/map.png" width="600" height="400" alt="карта маршрута, как можно доехать в седону"/>
-      </div>
-    </main>
-    <footer class="footer-flex">
-          <div class="social">
-            <p>#visitSEDONA</p>
+          <div class="map">
+            <img src="img/map.png" width="600" height="400" alt="карта маршрута, как можно доехать в седону"/>
           </div>
-          <ul class="visit-html">
-            <li><a  href="https://twitter.com" aria-label="twitter"><img class="tw" src="img/tw.png"/></a></li>
-            <li><a  href="https://facebook.com" aria-label="facebook"><img class="fb" src="img/fb.png"/></a></li>
-            <li><a  href="https://www.youtube.com" aria-label="youtube"><img class="you" src="img/youtube.png"/></a></li>
-          </ul>
-          <div class="footer-copyring">
-            <p>website by</p>
-            <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy"><img class="htmla" src="img/htmla.png"/></a>
-          </div>
-    </footer>
-  </div>
+  </section>
+  </main>
+  <footer class="footer-flex">
+    <div class="social">
+      <p>#visitSEDONA</p>
+    </div>
+    <ul class="visit-html">
+      <li><a  href="https://twitter.com" aria-label="twitter"><img class="tw" src="img/tw.png" alt="twitter"/></a></li>
+      <li><a  href="https://facebook.com" aria-label="facebook"><img class="fb" src="img/fb.png" alt="facebook"/></a></li>
+      <li><a  href="https://www.youtube.com" aria-label="youtube"><img class="you" src="img/youtube.png" alt="youtube"/></a></li>
+    </ul>
+    <div class="footer-copyring">
+      <p>website by</p>
+      <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy"><img class="htmla" src="img/htmla.png" alt="Ссылка на сайт htmlacademy"/></a>
+    </div>
+  </footer>
 </body>
 </html>
