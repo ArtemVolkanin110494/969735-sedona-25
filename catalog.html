@@ -9,19 +9,19 @@
   </head>
   <body>
     <header class="main-header">
+        <div class="logo">
+          <a class="main-logo" href="#">
+            <img class="lo-go" src="img/logo.png" alt="логотип сайта седона">
+          </a>
+        </div>
         <div class="container-flex">
             <nav class="main-navigation">
-              <div class="logo">
-                <a class="main-logo" href="#">
-                  <img class="lo-go" src="img/logo.png" alt="логотип сайта седона">
-                </a>
-              </div>
               <div class="navigation">
                 <ul class="navigation-item">
-                  <li class="inf hover active visited"><a class="in" href="#">информация</a></li>
-                  <li class="video hover active visited"><a class="in" href="#">фото и видео</a></li>
-                  <li class="map-card hover active visited"><a class="in" href="#">карта сайта</a></li>
-                  <li class="hostel hover active visited"><a class="in" href="catalog.html">гостиницы</a></li>
+                  <li class="information"><a href="#">информация</a></li>
+                  <li class="video"><a href="#">фото и видео</a></li>
+                  <li class="map-card"><a href="#">карта сайта</a></li>
+                  <li class="hotels"><a class="navigation-item-active" href="catalog.html">гостиницы</a></li>
                 </ul>
               </div>
             </nav>
@@ -74,41 +74,40 @@
         </form>
       </section> -->
       <section class="catalog">
-            <ul class="sorting-button">
+            <ul class="sorting-links">
               <li class="itog">
-                <input  type="text" name="itog" value="НАЙДЕНО: 3">
+                <p>НАЙДЕНО: 3</p><!--убрать инпут это текстовое поле-->
               </li>
-              <li class="sorting">сортировка:</li>
-              <li class="button-sort by-price">
-                <button class="by-price" type="button" name="button">по цене</button>
+              <li class="sorting">
+                <p>сортировка:</p>
               </li>
-              <li class="button-sort by-type">
-                <button type="button" name="button">по типу</button>
+              <li class="link-sort by-price">
+                <a class="price">по цене</a><!--это ссылки-->
               </li>
-              <li class="button-sort by-rated">
-                <button type="button" name="button">по рейтингу</button>
+              <li class="link-sort by-type">
+                <a class="type">по типу</a>
+              </li>
+              <li class="link-sort by-rated">
+                <a class="rating">по рейтингу</a>
               </li>
             </ul>
-
             <ul class="catalog-list">
-              <li class="hotel-row catalog-item">
-                <div class="column-1-1">
+              <li class="hotel-row">
+                <div class="amara-item-image">
                   <p class="catalog-item-image">
                     <img src="img/hotel.png" alt="Гостиница Amara Resort & Spa" width="135" height="90">
                   </p>
                 </div>
-                <div class="column-1-2">
-                  <span class="catalog-category"><a href="#">Amara Resort & Spa</a></span>
-                  <p class="catalog-item-price">
-                    <ul class="item-price">
-                      <li class="li-one">гостиница</li>
-                      <li class="li-two">от 4000 Р.</li>
-                    </ul>
-                    <ul class="item-price-button">
-                      <li class="button-1"><a  href="#">подробнее</a></li>
-                      <li class="button-2"><a  href="#">забронировать</a></li>
-                    </ul>
-                  </p>
+                <div class="price-list">
+                  <a class="catalog-category" href="#">Amara Resort & Spa</a>
+                  <div class="block-price">
+                    <p><span class="hotel-type margin-right-39px">гостиница</span></p>
+                    <p><span class="hotel-price">от 4000 Р.</span></p>
+                  </div>
+                  <div class="block-details">
+                    <a class="hotel-link hotel-link-details" href="#">подробнее</a>
+                    <a class="hotel-link hotel-link-booking" href="#">забронировать</a>
+                  </div>
                 </div>
                 <div class="column-1-3 star-4">
                   <div class="fa-star">
@@ -129,93 +128,88 @@
                     <p class="raiting">рейтинг: 8,5</p>
                   </div>
                 </div>
-
                 </li>
                 <li class="hotel-row">
-                  <div class="column-1-1">
+                  <div class="desert-item-image">
                     <p class="catalog-item-image">
                       <img src="img/motel.png" alt="Мотель Desert Quail Inn" width="135" height="90">
                     </p>
                   </div>
-                  <div class="column-1-2">
-                    <span class="catalog-category"><a href="#">Desert Quail Inn</a></span>
-                    <p class="catalog-item-price">
-                      <ul class="item-price">
-                        <li class="li-one">мотель</li>
-                        <li class="li-two">от 3000 Р.</li>
-                      </ul>
-                      <ul class="item-price-button">
-                        <li class="button-1"><a href="#">подробнее</a></li>
-                        <li class="button-2"><a href="#">забронировать</a></li>
-                      </ul>
-                    </p>
-                </div>
-                <div class=" column-1-3 star-4">
-                  <div class="fa-star">
-                    <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                        <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
-                    </svg></span>
-                    <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                        <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
-                    </svg></span>
-                    <span class=" checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                        <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
-                    </svg></span>
+                  <div class="price-list">
+                    <a class="catalog-category" href="#">Desert Quail Inn</a>
+                    <div class="block-price">
+                      <p><span class="hotel-type margin-right-64px">мотель</span></p>
+                      <p><span class="hotel-price">от 3000 Р.</span></p>
+                    </div>
+                    <div class="block-details">
+                      <a class="hotel-link hotel-link-details" href="#">подробнее</a>
+                      <a class="hotel-link hotel-link-booking" href="#">забронировать</a>
+                    </div>
                   </div>
-                  <div class="raiting-8.9">
-                    <p class="raiting">рейтинг: 8,9</p>
+                  <div class=" column-1-3 star-4">
+                    <div class="fa-star">
+                      <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                          <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                      </svg></span>
+                      <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                          <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                      </svg></span>
+                      <span class=" checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                          <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                      </svg></span>
+                    </div>
+                    <div class="raiting-8.9">
+                      <p class="raiting">рейтинг: 8,9</p>
+                    </div>
                   </div>
-                </div>
                 </li>
                 <li class="hotel-row">
-                <div class="column-1-1">
-                  <p class="catalog-item-image">
-                    <img src="img/appartament.png" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
-                  </p>
-                </div>
-                <div class="column-1-2">
-                  <span class="catalog-category"><a href="#">Villas at Poco Diablo</a></span>
-                  <p class="catalog-item-price">
-                    <ul class="item-price">
-                      <li class="li-one">апартаменты</li>
-                      <li class="li-two">от 2000 Р.</li>
-                    </ul>
-                    <ul class="item-price-button">
-                      <li class="button-1"><a href="#">подробнее</a></li>
-                      <li class="button-2"><a href="#">забронировать</a></li>
-                    </ul>
-                  </p>
-                </div>
-                <div class="column-1-3 star-4">
-                  <div class="fa-star">
-                    <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                        <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
-                    </svg></span>
-                    <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                        <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
-                    </svg></span>
+                  <div class="villas-item-image">
+                    <p class="catalog-item-image">
+                      <img src="img/appartament.png" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
+                    </p>
                   </div>
-                  <div class="raiting-9.2">
-                    <p class="raiting">рейтинг: 9,2</p>
+                  <div class="price-list">
+                    <a class="catalog-category" href="#">Villas at Poco Diablo</a>
+                    <div class="block-price">
+                      <p><span class="hotel-type margin-right-21px">апартаменты</span></p>
+                      <p><span class="hotel-price">от 2000 Р.</span></p>
+                    </div>
+                    <div class="block-details">
+                      <a class="hotel-link hotel-link-details" href="#">подробнее</a>
+                      <a class="hotel-link hotel-link-booking" href="#">забронировать</a>
+                    </div>
                   </div>
-                </div>
+                  <div class="column-1-3 star-4">
+                    <div class="fa-star">
+                      <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                          <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                      </svg></span>
+                      <span class="checked"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                          <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+                      </svg></span>
+                    </div>
+                    <div class="raiting-9.2">
+                      <p class="raiting">рейтинг: 9,2</p>
+                    </div>
+                  </div>
               </li>
             </ul>
       </section>
   </main>
   <footer class="footer-flex">
-        <div class="social">
-          <p>#visitSEDONA</p>
-        </div>
-        <ul class="visit-html">
-          <li><a  href="https://twitter.com" aria-label="twitter"><img class="tw" src="img/tw.png"/></a></li>
-          <li><a  href="https://facebook.com" aria-label="facebook"><img class="fb" src="img/fb.png"/></a></li>
-          <li><a  href="https://www.youtube.com" aria-label="youtube"><img class="you" src="img/youtube.png"/></a></li>
-        </ul>
-        <div class="footer-copyring">
-          <p>website by</p>
-          <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy"><img class="htmla" src="img/htmla.png"/></a>
-        </div>
+    <div class="social">
+      <p>#visitSEDONA</p>
+    </div>
+    <ul class="visit-html">
+      <li><a class="social-link social-link-twitter" href="https://twitter.com" aria-label="twitter"></a></li>
+      <li><a class="social-link social-link-facebook" href="https://facebook.com" aria-label="facebook"></a></li>
+      <li><a class="social-link social-link-youtube" href="https://www.youtube.com" aria-label="youtube"></a></li>
+    </ul>
+    <div class="footer-copyring">
+      <p>website by</p>
+      <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт htmlacademy"><img class="htmla" src="img/htmla.png" alt="Ссылка на сайт htmlacademy"/></a>
+    </div>
   </footer>
 </div>
 </body>
