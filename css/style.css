@@ -1155,8 +1155,13 @@ li {
   width: 116px;
   margin: 0;
   margin-top: 5px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
   color: #333333;
 }
 /* .block-price .margin-right-39px {
