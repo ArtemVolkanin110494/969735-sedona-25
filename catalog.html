@@ -8,20 +8,19 @@
     <title>Главная страница сайта Седона</title>
   </head>
   <body>
-    <header class="main-header">
+    <header>
+      <div class="main-logo">
+        <a class="logo" href="index.html"><img class="lo-go" src="img/logo.png" alt="логотип сайта седона"></a>
+      </div>
         <div class="container-flex">
           <nav class="main-navigation">
-            <div class="navigation">
               <ul class="navigation-item">
                 <li class="information"><a href="#">информация</a></li>
                 <li class="video"><a href="#">фото и видео</a></li>
-                <li class="main-logo">
-                  <a class="main-logo" href="index.html"><img class="lo-go" src="img/logo.png" alt="логотип сайта седона"></a>
-                </li>
+                <li class="block-dummy"></li>
                 <li class="map-card"><a href="#">карта штата</a></li>
                 <li class="hotels navigation-item-active"><a href="#">гостиницы</a></li>
               </ul>
-            </div>
           </nav>
         </div>
     </header>
@@ -89,10 +88,18 @@
                 <a class="rating" href="#">по рейтингу</a>
               </li>
               <li class="arrow social-link-up">
-                <a class="way-up" href="#"></a>
+                <a class="way-up" href="#">
+                  <svg class="up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                  </svg>
+              </a>
               </li>
               <li class="arrow social-link-down">
-                <a class="way-down" href="#"></a>
+                <a class="way-down" href="#">
+                  <svg class="down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
               </li>
             </ul>
             <ul class="catalog-list">
@@ -107,7 +114,7 @@
                     <a class="catalog-category" href="#">Amara Resort & Spa</a>
                   </div>
                   <div class="block-price">
-                    <span class="hotel-type margin-right-39px">гостиница</span>
+                    <span class="hotel-type">гостиница</span>
                     <span class="hotel-price">от 4000 Р.</span>
                   </div>
                   <div class="block-details">
@@ -147,7 +154,7 @@
                       <a class="catalog-category" href="#">Desert Quail Inn</a>
                     </div>
                     <div class="block-price">
-                      <span class="hotel-type margin-right-64px">мотель</span>
+                      <span class="hotel-type">мотель</span>
                       <span class="hotel-price">от 3000 Р.</span>
                     </div>
                     <div class="block-details">
@@ -183,7 +190,7 @@
                       <a class="catalog-category" href="#">Villas at Poco Diablo</a>
                     </div>
                     <div class="block-price">
-                      <span class="hotel-type margin-right-21px">апартаменты</span>
+                      <span class="hotel-type">апартаменты</span>
                       <span class="hotel-price">от 2000 Р.</span>
                     </div>
                     <div class="block-details">

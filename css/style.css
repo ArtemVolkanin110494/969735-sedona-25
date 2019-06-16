@@ -8,14 +8,21 @@ body {
   min-width: 1200px;
 
 }
-/* li > * {
+/* ul > * {
   background: rgba(255, 0, 0, 0.2);
-} */
+}
+ul > * > * {
+  background: rgba(170, 56, 56, 0.2);
+}
 
-/* body > * > * > *{
-  background: rgba(255, 0, 0, 0.8);
+li > * {
+  background: rgba(47, 216, 137, 0.8);
+  /* border: 1px solid #000000; */
+}
+div > * {
+  background: rgba(47, 216, 137, 0.2);
+  border: 0.3px solid #000000;
 } */
-
 /* .container-flex {
   width: 1200px; /*Даем ширину*/
   margin: 0 auto; /*Даем центровку*/
@@ -43,18 +50,21 @@ header {
   max-height: 71px;
   width: 240px;
   z-index: 3;
+  position: absolute;
+  left: 480px;
 }
 .lo-go {
   max-width: 140px;
   max-height: 71px;
+  padding-left: 52px;
+  padding-right: 52px;
 }
-.main-header {
-  color: #000000;
+.main-logo a {
+  max-width: 140px;
+  max-height: 56px;
 }
+
 /* блок навигации */
-.navigation {
-  position: relative;
-}
 
 .navigation-item,
 .visit-html {
@@ -107,7 +117,9 @@ header {
   text-align: center;
   min-width: 239px;
 }
-
+.block-dummy {
+  min-width: 240px;
+}
 /* стили ссылок */
 .navigation-item-active a {
   color: #766357;
@@ -143,6 +155,7 @@ header {
   background-image:  url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center -82px;
 }
 .welcome::after {
   content: "";
@@ -155,8 +168,7 @@ header {
 
 }
 .welcome img {
-  padding-top: 61px;
-  padding-bottom: 79px;
+  padding-top: 75px;
   width: 459px;
   min-height: 353px;
 }
@@ -208,25 +220,26 @@ header {
 
 .go-data {
   display: inline-block;
-  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+.go  {
+  margin-top: 0px;
+  margin-bottom: 45px;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   color: #333333;
-  margin-bottom: 0px;
-  margin-top: 50px;
-}
-.go  {
-  margin-top: 0px;
-  margin-bottom: 40px;
+  text-align: center;
 }
 
 .interested {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 36px;
+  text-align: center;
   color: #000000;
   margin-top: 0;
 }
@@ -252,6 +265,7 @@ header {
   font-weight: bold;
   line-height: 1.24;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 .serch-buttom:hover {
@@ -260,8 +274,8 @@ header {
 }
 .serch-buttom:active {
   background-color: #503e33;
-  color: #ffffff;
-  rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+
 }
 
 
@@ -281,7 +295,7 @@ header {
   box-shadow: 0px 7px 15px 0 #d9d9d9;
   z-index: 1;
   position: absolute;
-  top: 285px;
+  top: 290px;
 }
 
 .arriv {
@@ -515,7 +529,8 @@ header {
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 26px;
+  line-height: 1.24;
+  letter-spacing: normal;
   color: #ffffff;
 }
 /*конец*/
@@ -556,7 +571,7 @@ li {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: -120px;
+  margin-bottom: -128px;
 }
 .map img {
   min-width: 1200px;
@@ -581,6 +596,14 @@ li {
   padding: 0;
   margin: 0 auto;
 }
+.features-list h3 {
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+}
 /* строка 1 */
 .features-item-1 {
   display: flex;
@@ -593,7 +616,6 @@ li {
   flex-direction: column;
   text-align: center;
   align-items: center;
-
   width: 400px;
   min-height: 256px;
   background-color: #81b3d2;
@@ -601,8 +623,11 @@ li {
 }
 .real-town-one h3 {
   width: 280px;
+  font-size: 21px;
   font-weight: bold;
-  line-height: 1.2;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 21px;
   letter-spacing: normal;
   margin: 0 auto;
   padding: 46px;
@@ -614,7 +639,7 @@ li {
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
+
   text-align: center;
   font-size: 14px;
   text-align: center;
@@ -641,19 +666,25 @@ li {
   text-align: center;
 }
 .features-item-one-line h3 {
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
   margin: 0;
   padding-top: 25px;
 }
 .features-item-one-line p {
+  width: 300px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   color: #333333;
   padding-top: 10px;
+  margin-bottom: 25px;
 }
 
 .features-item-two-line {
@@ -670,15 +701,15 @@ li {
   padding-top: 25px;
 }
 .features-item-two-line p {
+  width: 300px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   color: #333333;
   padding-top: 10px;
+  margin-bottom: 25px;
 }
 .features-item-three-line {
   display: flex;
@@ -694,15 +725,15 @@ li {
   padding-top: 25px;
 }
 .features-item-three-line p {
+  width: 300px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   color: #333333;
   padding-top: 10px;
+  margin-bottom: 30px;
 }
 /* строка 3 */
 .features-item-2 {
@@ -724,15 +755,12 @@ li {
 }
 .real-town-two h3 {
   width: 280px;
-  font-weight: bold;
-  line-height: 1.2;
-  letter-spacing: 0.095em;
   margin: 0 auto;
   padding: 46px;
   padding-bottom: 20px;
 }
 .real-town-two p {
-  width: 280px;
+  width: 300px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -767,7 +795,11 @@ li {
 .features-item-four-line h3 {
   margin-top: 0;
 }
+.features-item-four-line span {
+  margin-bottom: 5px;
+}
 .features-item-four-line p {
+  width: 250px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -793,6 +825,7 @@ li {
   margin-top: 0;
 }
 .features-item-five-line p {
+  width: 280px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -818,6 +851,7 @@ li {
   margin-top: 0;
 }
 .features-item-six-line p {
+  width: 250px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -875,9 +909,9 @@ li {
   min-width: 400px;
 }
 .footer-copyring p {
-  margin-right: 8px;
+  margin-right: 0px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .footer-flex a {
@@ -946,6 +980,14 @@ li {
   width: 115px;
   height: 41px;
   color: #81b3d2;
+  margin-top: 9px;
+  margin-right: 17px;
+
+    /* margin-right: -5;
+    margin-right: -5; */
+    margin-right: 0px;
+    margin-left: 8px;
+
 }
 
 .social p {
@@ -1034,19 +1076,25 @@ li {
 }
 
 .social-link-up {
-  content: "";
-  background-image: url(../img/icon-up-dir.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 11px 10px;
   margin-left: 456px;
 }
-.social-link-down {
-  content: "";
-  background-image: url(../img/icon-down-dir.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 11px 10px;
+.up {
+  fill: #cacaca;
+}
+.down {
+  fill: #cacaca;
+}
+.up:hover {
+  fill: #000000;
+}
+.up:active {
+  fill: #81b3d2;
+}
+.down:hover {
+  fill: #000000;
+}
+.down:active {
+  fill: #81b3d2;
 }
 
 .catalog-list {
@@ -1101,15 +1149,17 @@ li {
 .block-price {
   display: flex;
   flex-direction: row;
+  min-width: 258px;
 }
 .block-price span {
+  width: 116px;
   margin: 0;
   margin-top: 5px;
   margin-bottom: 6px;
   font-size: 14px;
   color: #333333;
 }
-.block-price .margin-right-39px {
+/* .block-price .margin-right-39px {
   margin-right: 39px;
 }
 .block-price .margin-right-64px {
@@ -1117,7 +1167,7 @@ li {
 }
 .block-price .margin-right-21px {
   margin-right: 21px;
-}
+} */
 
 
 .block-details {
