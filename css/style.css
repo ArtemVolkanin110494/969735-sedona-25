@@ -118,12 +118,12 @@ header {
   min-width: 239px;
 }
 .block-dummy {
-  min-width: 240px;
+  min-width: 244px;
 }
 /* стили ссылок */
-.navigation-item-active a {
+/* .navigation-item-active a { //мусор//
   color: #766357;
-}
+} */
 .navigation-item a {
   height: 56px;
   min-width: 239px;
@@ -138,7 +138,7 @@ header {
 .navigation-item a:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.navigation-item-active a:visited {
+.navigation-item-active a {
   color: #766357;
 }
 
@@ -225,7 +225,7 @@ header {
 }
 .go  {
   margin-top: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
@@ -242,6 +242,7 @@ header {
   text-align: center;
   color: #000000;
   margin-top: 0;
+  margin-bottom: 23px;
 }
 
 .serch {
@@ -295,7 +296,7 @@ header {
   box-shadow: 0px 7px 15px 0 #d9d9d9;
   z-index: 1;
   position: absolute;
-  top: 290px;
+  top: 289px;
 }
 
 .arriv {
@@ -693,6 +694,7 @@ li {
   letter-spacing: normal;
   margin: 0;
   padding-top: 25px;
+  margin-bottom: 25px;
 }
 .features-item-one-line p {
   width: 300px;
@@ -707,6 +709,7 @@ li {
   padding-left:10px;
   padding-right: 10px;
   box-sizing: border-box;
+  margin-top: 0;
 }
 
 .features-item-two-line {
@@ -721,6 +724,7 @@ li {
 .features-item-two-line h3 {
   margin: 0;
   padding-top: 25px;
+  margin-bottom: 25px;
 }
 .features-item-two-line p {
   width: 300px;
@@ -733,6 +737,7 @@ li {
   padding-left:5px;
   padding-right: 5px;
   box-sizing: border-box;
+  margin-top: 0;
 }
 .features-item-three-line {
   display: flex;
@@ -746,6 +751,7 @@ li {
 .features-item-three-line h3 {
   margin: 0;
   padding-top: 25px;
+  margin-bottom: 25px;
 }
 .features-item-three-line p {
   font-size: 14px;
@@ -757,6 +763,8 @@ li {
   padding-left:50px;
   padding-right: 50px;
   box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 18px;
 }
 /* строка 3 */
 .features-item-2 {
@@ -884,6 +892,9 @@ li {
   text-align: center;
   color: #333333;
 }
+.element-nambe {
+margin-bottom: 5px;
+}
 /* футер */
 
 .footer-flex {
@@ -891,7 +902,7 @@ li {
   flex-direction: row;
   justify-content: center;
   background-color: rgba(255,255,255,0.9);
-  min-height: 120px;
+  min-height: 121px;
   position: relative;
   padding: 0;
   min-width: 1200px;
@@ -1174,12 +1185,10 @@ li {
 .down:active {
   fill: #81b3d2;
 }
-.down:visited {
+.active  {
   fill: #81b3d2;
 }
-/* .social-link-down :visited {
-  fill: #81b3d2;
-} */
+
 
 .catalog-list {
   display: flex;
@@ -1195,7 +1204,7 @@ li {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #b7b7b7;
+  border-bottom: 1px solid #dadada;
 }
 .catalog-item-image {
   display: flex;
@@ -1213,7 +1222,11 @@ li {
   flex-direction: column;
   align-content: space-between;
   min-width: 780px;
-  min-height: 90px;
+  min-height: 122px;
+}
+.name-hotel {
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 .catalog-category {
   font-size: 21px;
@@ -1235,12 +1248,14 @@ li {
   display: flex;
   flex-direction: row;
   min-width: 258px;
+  min-height: 35px;
+  /* margin-bottom: 3px; */
 }
 .block-price span {
   width: 116px;
   margin: 0;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  /* margin-top: 5px;
+  margin-bottom: 10px; */
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -1263,8 +1278,10 @@ li {
 .block-details {
   display: flex;
   flex-direction: row;
+  /* min-height: 30px; */
 }
 .block-details a {
+  min-height: 27px;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -1272,6 +1289,9 @@ li {
   font-stretch: normal;
   letter-spacing: normal;
   color: #ffffff;
+}
+.hotel-link-details a {
+  min-height: 27px;
 }
 .hotel-link-details:hover {
   background-color: #669ec0;
@@ -1301,22 +1321,23 @@ li {
 
 .hotel-row {
   min-height: 150px;
-  border-top: 1px solid #b7b7b7;
+  border-top: 1px solid #dadada;
   border-width: 100%;
 }
 
 .column-1-3 {
   display: block;
   min-width: 110px;
+  min-height: 122px;
 }
 .star-4 {
   display: flex;
   flex-direction: column;
-
+  margin-top: 25px;
 }
 .fa-star {
   text-align: right;
-  padding-bottom: 38px
+  padding-bottom: 40px
 }
 .raiting {
   padding: 0;
