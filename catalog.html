@@ -25,13 +25,15 @@
         </div>
     </header>
     <main class="container">
-      <!-- <section class="filters">
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
-          <form class="filter" action="#" method="get" oninput="daysoutput.value=dayscount.value">
-            <fieldset>
-              <p>Инфраструктура:</p>
-              <p>Тип жилья:</p>
-              <ul>
+          <form class="form-search" class="filter" action="#" method="get" oninput="daysoutput.value=dayscount.value">
+            <fieldset class="form-elements" >
+              <div class="filter-catalog">
+                <p>Инфраструктура:</p>
+                <p>Тип жилья:</p>
+              </div>
+              <ul class="elements-checkbox">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
                   <label for="filter-apartments">Апартаменты</label>
@@ -57,9 +59,10 @@
                   <label for="filter-pool">Бассейн</label>
                 </li>
             </ul>
-              <p>Стоимость в сутки (Р):</p>
+              <div class="cost-per-day">
+                <span>Стоимость в сутки (Р):</span>
+              </div>
               <div class="half-width output-area">
-
                   <output name="daysoutput"></output>
               </div>
               <div class="half-width">
@@ -69,7 +72,7 @@
             <input type="submit" value="Показать">
           </fieldset>
         </form>
-      </section> -->
+      </section>
       <section class="catalog">
             <div class="block-sorting">
               <div class="block-itog">
