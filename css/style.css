@@ -380,7 +380,7 @@ header {
   width: 22px;
   height: 5px;
 
-  background-color: red;
+  background-color: #000000;
 
   transform: rotate(-45deg);
 }
@@ -394,7 +394,7 @@ header {
   width: 13px;
   height: 5px;
 
-  background-color: red;
+  background-color: #000000;
 
   transform: rotate(45deg);
 }
