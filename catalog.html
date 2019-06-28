@@ -8,71 +8,84 @@
     <title>Главная страница сайта Седона</title>
   </head>
   <body>
-    <header>
-      <div class="main-logo">
-        <a class="logo" href="index.html"><img class="lo-go" src="img/logo.png" alt="логотип сайта седона"></a>
-      </div>
-        <div class="container-flex">
-          <nav class="main-navigation">
-              <ul class="navigation-item">
-                <li class="information"><a href="#">информация</a></li>
-                <li class="video"><a href="#">фото и видео</a></li>
-                <li class="block-dummy"></li>
-                <li class="map-card"><a href="#">карта штата</a></li>
-                <li class="hotels navigation-item-active"><a href="#">гостиницы</a></li>
-              </ul>
-          </nav>
+    <div class="centering">
+      <header class="style-catalog">
+        <div class="main-logo">
+          <a class="logo" href="index.html"><img class="lo-go" src="img/logo.png" alt="логотип сайта седона"></a>
         </div>
-    </header>
+          <div class="container-flex">
+            <nav class="main-navigation">
+                <ul class="navigation-item">
+                  <li class="information"><a href="#">информация</a></li>
+                  <li class="video"><a href="#">фото и видео</a></li>
+                  <li class="block-dummy"></li>
+                  <li class="map-card"><a href="#">карта штата</a></li>
+                  <li class="hotels navigation-item-active"><a href="#">гостиницы</a></li>
+                </ul>
+            </nav>
+          </div>
+      </header>
+
     <main class="container">
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр</h2>
-          <form class="form-search" class="filter" action="#" method="get" oninput="daysoutput.value=dayscount.value">
-            <fieldset class="form-elements" >
-              <div class="filter-catalog">
-                <p>Инфраструктура:</p>
-                <p>Тип жилья:</p>
-              </div>
+
+      <section class="filter-sorting-unit">
+            <fieldset class="elements-form" >
               <ul class="elements-checkbox">
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
-                  <label for="filter-apartments">Апартаменты</label>
+                <li class="option-filter-one">
+                  <span>инфраструктура:</span>
+                  <div class="option option-indent filter-option-one">
+                    <label class="cursor by-infrastructure" for="filter-pool"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>Бассейн</label>
+
+                  </div>
+                  <div class="option filter-option-two">
+                    <label class="by-infrastructure" for="filter-parking"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">Парковка</label>
+
+                  </div>
+                  <div class="option filter-option-three">
+                    <label class="by-infrastructure" for="filter-Wi-Fi"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name=">Wi-Fi" id="filter-Wi-Fi">Wi-Fi</label>
+
+                  </div>
                 </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
-                  <label for="filter-motel">Мотель</label>
+                <li class="option-filter-two">
+                  <span>тип жилья:</span>
+                  <div class="option option-indent filter-option-four">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                  </div>
+                  <div class="option filter-option-five">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                  </div>
+                  <div class="option filter-option-six">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                    <label for="filter-apartments">Апартаменты</label>
+                  </div>
                 </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
-                  <label for="filter-hotel">Гостиница</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name=">Wi-Fi" id="filter-Wi-Fi">
-                  <label for="filter-Wi-Fi">Wi-Fi</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
-                  <label for="filter-pool">Бассейн</label>
-                </li>
-            </ul>
-              <div class="cost-per-day">
-                <span>Стоимость в сутки (Р):</span>
-              </div>
-              <div class="half-width output-area">
-                  <output name="daysoutput"></output>
-              </div>
-              <div class="half-width">
-                  <label for="dayscount"></label>
-                  <input type="range" id="dayscount" name="dayscount" min="0" max="4500" step="1">
-              </div>
-            <input type="submit" value="Показать">
-          </fieldset>
-        </form>
+                <li class="filter">
+                    <div class="filter-range">
+                      <div class="filter-range-title">
+                        <span>Стоимость в сутки (р):</span>
+                      </div>
+                      <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                      </div>
+                      <div class="range-controls">
+                        <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                      </div>
+                      <div class="transparent">
+                      <button class="btn-transparent" type="submit">Показать</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </fieldset>
       </section>
+
       <section class="catalog">
             <div class="block-sorting">
               <div class="block-itog">
@@ -235,5 +248,6 @@
       </a>
     </div>
   </footer>
+  </div>
 </body>
 </html>
