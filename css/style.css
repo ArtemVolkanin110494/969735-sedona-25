@@ -248,7 +248,6 @@ header {
   position: relative;
   z-index: 1;
 }
-
 .serch-buttom {
   padding: 0px;
   margin: 0px;
@@ -264,7 +263,9 @@ header {
   text-transform: uppercase;
   color: #ffffff;
 }
+.serch-buttom {
 
+}
 .serch-buttom:hover {
   background-color: #604e43;
   color: #ffffff;
@@ -505,10 +506,10 @@ header {
 .checkbox input[type="checkbox"]:focus + label::before {
   outline: rgb(59, 153, 252) auto 5px;
 }
-.checkbox input[type="checkbox"]:active:disabled + label::before {
+.checkbox input[type="checkbox"]:hover:disabled + label::before {
   color: #6a6a6a;
 }
-.checkbox input[type="checkbox"]:active:checked:disabled + label::after {
+.checkbox input[type="checkbox"]:hover:checked:disabled + label::after {
   color: #6a6a6a;
 }
 /* checkbox */
@@ -759,9 +760,7 @@ Disabled
 
 /* end-style-filter */
 
-.modal-show {
-  display: none;
-}
+
 
 .form-back {
   margin: 0 auto;
@@ -808,7 +807,7 @@ Disabled
 .arriv2 input {
   margin-top: 29px;
   margin-left: 0px;
-  /* align-self: baseline; */
+  align-self: baseline;
 }
 
 .data1:hover,
@@ -999,7 +998,7 @@ Disabled
   color: #81b3d2;
 }
 
-.buttom-serch {
+.button-serch {
   padding: 0px;
   width: 458px;
   height: 58px;
