@@ -110,9 +110,9 @@
         <p class="go">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </div>
       <div class="serch">
-        <button class="serch-buttom interactivity" name="serch-hotel" value="serch-hotel" type="button">поиск гостиницы в седоне</button>
+        <button class="serch-buttom" name="serch-hotel" value="serch-hotel" type="button">поиск гостиницы в седоне</button>
       </div>
-      <form class="form-back sub-form-back" action="http://echo.htmlacademy.ru" method="post">
+      <form class="form-back" action="http://echo.htmlacademy.ru" method="post">
                 <div class="arriv">
                   <label class="arriv-data1" for="arriv-data">Дата заезда:</label>
                   <input class="data1" type="text" id="arriv-data" name="text" placeholder="24 АПРЕЛЯ 2017"/>
@@ -144,7 +144,7 @@
                   <button class="order3 to plus" type="button" name="plus"></button>
                 </div>
                 <div class="btn-srch">
-                  <button class="button-serch" type="submit">НАЙТИ</button>
+                  <button class="buttom-serch" type="submit">НАЙТИ</button>
                 </div>
           </form>
   </section>
@@ -170,8 +170,15 @@
     </div>
   </footer>
 </div>
-<script>
-  var buttom = document.querySelector(".interactivity");
-</script>
 </body>
 </html>
+<script>
+  var serch = document.querySelector(".serch-buttom");
+  var popup = document.querySelector(".form-back");
+
+  serch.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.toggle("modal-show");
+  });
+
+</script>
