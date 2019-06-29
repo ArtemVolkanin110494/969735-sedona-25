@@ -448,34 +448,37 @@ header {
 
 /*  */
 .checkbox input[type="checkbox"] {
-    opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .checkbox label {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 
-    padding-left: 22px;
+  padding-left: 22px;
 }
 
 .checkbox label::before,
 .checkbox label::after {
-    position: absolute;
-    content: "";
+  position: absolute;
+  content: "";
 
-    display: inline-block;
+  display: inline-block;
 }
 
 /*Outer box of the fake checkbox*/
 .checkbox label::before{
-    height: 23px;
-    width: 23px;
+  height: 23px;
+  width: 23px;
 
-    border: 2px solid;
-    border-radius: 3px;
-    left: -17px;
+  border: 2px solid;
+  border-radius: 3px;
+  left: -17px;
 
-    top: -2px;
+  top: -2px;
 }
 
 /*Checkmark of the fake checkbox*/
@@ -493,17 +496,20 @@ header {
 }
 
 .checkbox input[type="checkbox"] + label::after {
-    content: none;
+  content: none;
 }
 
 .checkbox input[type="checkbox"]:checked + label::after {
-    content: "";
+  content: "";
 }
 
 .checkbox input[type="checkbox"]:focus + label::before {
-    outline: rgb(59, 153, 252) auto 5px;
+  outline: rgb(59, 153, 252) auto 5px;
 }
-.checkbox input[type="checkbox"]:disabled + label::before {
+.checkbox input[type="checkbox"]:hover:disabled + label::before {
+  color: #6a6a6a;
+}
+.checkbox input[type="checkbox"]:hover:checked:disabled + label::after {
   color: #6a6a6a;
 }
 /* checkbox */
