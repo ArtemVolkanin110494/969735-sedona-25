@@ -117,10 +117,10 @@
     <div class="serch">
       <button class="serch-buttom" name="serch-hotel" value="serch-hotel" type="button">поиск гостиницы в седоне</button>
     </div>
-  <form class="form-back square validation" action="http://echo.htmlacademy.ru" method="post">
+  <form class="form-back square" action="http://echo.htmlacademy.ru" method="post">
     <div class="arriv">
       <label class="arriv-data-one" for="arriv-data">Дата заезда:</label>
-      <input class="data-one" type="text" id="arriv-data" name="textone" placeholder="24 АПРЕЛЯ 2017" />
+      <input class="data-one" type="text" id="arriv-data" name="text" placeholder="24 АПРЕЛЯ 2017" />
       <button class="block-calendar-one" type="button" name="button" value="data">
         <svg class="calendar-one" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
           <path
@@ -131,7 +131,7 @@
     </div>
     <div class="arriv arriv-two">
       <label class="arriv-data-two" for="departure">Дата выезда:</label>
-      <input class="data-two" type="text" id="departure" name="texttwo" placeholder="4 ИЮЛЯ 2017" />
+      <input class="data-two" type="text" id="departure" name="text" placeholder="4 ИЮЛЯ 2017" />
       <button class="block-calendar-two" type="button" name="button" value="data">
         <svg class="calendar-two" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
           <path
@@ -148,7 +148,7 @@
     </div>
     <div class="people-two">
       <label for="children">Дети:</label>
-      <input class="nambe to order-one" type="text" id="children" name="texthildren" placeholder="0" />
+      <input class="nambe to order-one" type="text" id="children" name="textchildren" placeholder="0" />
       <button class="order-two to to-one minus" type="button" name="minus-svg"></button>
       <button class="order-three to plus" type="button" name="plus"></button>
     </div>
@@ -188,36 +188,65 @@ var serch = document.querySelector(".serch-buttom");
 var popup = document.querySelector(".form-back");
 
 // пять строки 1-ищем форму 2-ищем поля. ориентир(2)
-var form = popup.querySelector("form");
-var textone = popup.querySelector("[name=textone]");
-var texttwo = popup.querySelector("[name=texttwo]");
 var textadults = popup.querySelector("[name=textadults]");
-var texthildren = popup.querySelector("[name=texthildren]");
+var textchildren = popup.querySelector("[name=textchildren]");
 
-// анимация появления формы (работает если закомитить весь остальной JS код ориентир(1)
+var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("textadults");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+// анимация появления формы (работает если закомитить весь остальной JS код) ориентир(1)
 serch.addEventListener("click", function (evt) {
   popup.classList.toggle("modal-show");
+  popup.classList.remove("modal-error");
+
+  if (storage) {
+      textadults.value.value = storage;
+      textchildren.value = storage;
+    }
 });
 
 // ориентир(2)
-validation.addEventListener("submit", function (evt)) {
+popup.addEventListener("submit", function (evt) {
   evt.preventDefault();
 });
 
-form.addEventListener("submit", function (evt)) {
-  if (!textone.value || !texttwo.value) {
+popup.addEventListener("submit", function (evt) {
+  if (!textadults.value || !textchildren.value) {
     evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("textadults", textadults.value);
+      localStorage.setItem("textchildren", textchildren.value);
+    }
   }
 });
 
-form.addEventListener("submit", function (evt)) {
-  if (!textadults.value || !texthildren.value) {
-    evt.preventDefault();
-  } else {
-    localStorage.stItem("textadults", textadults.value);
-    localStorage.stItem("texthildren", texthildren.value);
-  }
-});
+window.addEventListener("keydown", function (evt) {
+   if (evt.keyCode === 27) {
+     evt.preventDefault();
+     if (popup.classList.contains("form-back")) {
+       popup.classList.remove("form-back");
+       popup.classList.remove("modal-error");
+     }
+   }
+ });
+
+// form.addEventListener("submit", function (evt) {
+//   if (!textadults.value || !texthildren.value) {
+//     evt.preventDefault();
+//   } else {
+//     localStorage.stItem("textadults", textadults.value);
+//     localStorage.stItem("texthildren", texthildren.value);
+//   }
+// });
 
 
 </script>
