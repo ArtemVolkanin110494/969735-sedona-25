@@ -8,12 +8,6 @@ body {
   min-width: 1200px;
 }
 
-/* просто текст ниже он не важен и будет удален после ревью  */
-.CamelCase {
-  background-color: red;
-}
-/*будет удален после ревью  */
-
 .background {
   width: 1200px;
   margin: 0 auto;
@@ -1142,8 +1136,6 @@ li {
   min-width: 1200px;
   min-height: 593px;
 }
-
-/* стили для class="container" */
 
 .features {
   width: 1200px;
