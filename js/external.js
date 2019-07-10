@@ -13,7 +13,8 @@ var isStorageSupport = true;
   } catch (err) {
     isStorageSupport = false;
   }
-// анимация появления формы
+// анимация появления формы ориентир(1)
+popup.classList.toggle("hidden");
 serch.addEventListener("click", function (evt) {
   popup.classList.toggle("hidden");
   // popup.classList.toggle("square");
@@ -26,6 +27,7 @@ serch.addEventListener("click", function (evt) {
     }
 });
 
+// ориентир(2)
 popup.addEventListener("submit", function (evt) {
   if (!textadults.value || !textchildren.value) {
     evt.preventDefault();

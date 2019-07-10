@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style-min.css" rel="stylesheet"/>
     <title>Главная страница сайта Седона</title>
   </head>
 <body>
@@ -21,7 +21,7 @@
       </ul>
     </nav>
     <div class="welcome">
-      <img src="img/welcome.png" width="459" height="428" alt="добро пожаловать в седону">
+      <img src="img/welcome.png" width="459" height="328" alt="добро пожаловать в седону">
     </div>
   </div>
 </header>
@@ -124,7 +124,7 @@
     <h3 class="interested">заинтересовались?</h3>
     <p class="go">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
     <button class="serch-buttom" name="serch-hotel" value="serch-hotel" type="button">поиск гостиницы в седоне</button>
-  <form class="form-back hidden square" action="http://echo.htmlacademy.ru" method="post">
+  <form class="form-back square" action="http://echo.htmlacademy.ru" method="post">
     <div class="arriv">
       <label class="arriv-data-one" for="arriv-data">Дата заезда:</label>
       <input class="data-one" type="text" id="arriv-data" name="text" placeholder="24 АПРЕЛЯ 2017" />
@@ -184,59 +184,6 @@
   </footer>
 </div>
 </div>
-<script>
-  // анимация появления формы ориентир(1)
-  var serch = document.querySelector(".serch-buttom");
-  var popup = document.querySelector(".form-back");
-
-  var textadults = popup.querySelector("[name=textadults]");
-  var textchildren = popup.querySelector("[name=textchildren]");
-
-  var isStorageSupport = true;
-    var storage = "";
-
-    try {
-      storage = localStorage.getItem("textadults");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-  // анимация появления формы ориентир(1)
-  serch.addEventListener("click", function (evt) {
-    popup.classList.toggle("hidden");
-    // popup.classList.toggle("square");
-
-    popup.classList.remove("modal-error");
-
-    if (storage) {
-        textadults.value.value = storage;
-        textchildren.value = storage;
-      }
-  });
-
-  // ориентир(2)
-  popup.addEventListener("submit", function (evt) {
-    if (!textadults.value || !textchildren.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else if (isStorageSupport) {
-        localStorage.setItem("textadults", textadults.value);
-        localStorage.setItem("textchildren", textchildren.value);
-    }
-  });
-
-  window.addEventListener("keydown", function (evt) {
-     if (evt.keyCode === 27) {
-       evt.preventDefault();
-       popup.classList.toggle("hidden");
-       if (
-         popup.classList.contains("form-back")) {
-
-         popup.classList.remove("modal-error");
-       }
-     }
-   });
-</script>
+<script src="js/external-min.js"></script>
 </body>
 </html>
