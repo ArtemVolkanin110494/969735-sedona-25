@@ -153,45 +153,33 @@ body {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  padding: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-top: 15px;
-  margin-left: 62px;
-  /* width: 110px; */
+  margin-left: 70px;
+  width: 110px;
 }
 .link-two {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  padding: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-top: 15px;
-  margin-left: 63px;
-  /* width: 110px; */
+  margin-left: 71px;
+  width: 110px;
 }
 .link-three {
   display: inline-block;
   vertical-align: middle;
   text-align: right;
-  padding: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-top: 15px;
-  margin-left: 70px;
-  /* width: 110px; */
+  margin-left: 55px;
+  width: 110px;
 }
 .link-four {
   display: inline-block;
   vertical-align: middle;
   text-align: right;
-  padding: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-top: 15px;
-  margin-left: 79px;
-  /* width: 110px; */
+  margin-left: 55px;
+  width: 110px;
 }
 /* удалять не нужно */
 /* .navigation-item a {
@@ -763,9 +751,6 @@ body {
 .hidden {
   display: none;
 }
-/* .hid {
-  display: block;
-} */
 
 .form-back {
   margin: 0 auto;
@@ -969,7 +954,7 @@ body {
 
 .calendar-one:focus,
 .calendar-two:focus {
-  background-color: #000000;
+  fill: #81b3d2;
 }
 
 .nambe::-webkit-input-placeholder {
@@ -1412,7 +1397,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: -121px;
+  margin-bottom: -128px;
 }
 
 .map img {
@@ -2126,7 +2111,7 @@ margin-bottom: 5px;
   min-height: 86px;
 }
 
-.block-total  {
+.block-itog  {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2152,11 +2137,11 @@ margin-bottom: 5px;
           flex-direction: row;
 }
 
-.block-total p {
+.block-itog p {
   padding: 0;
 
 }
-.block-total p {
+.block-itog p {
   min-width: 120px;
   font-size: 21px;
   font-weight: bold;
@@ -2170,7 +2155,7 @@ margin-bottom: 5px;
 
 }
 
-.block-total h2 {
+.block-itog h2 {
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -2189,8 +2174,6 @@ margin-bottom: 5px;
 .by-price {
   margin-left: 38px;
   min-width: 50px;
-  color: #81b3d2;
-  border: none;
 }
 
 .by-type {
@@ -2218,14 +2201,9 @@ margin-bottom: 5px;
 
 .link-sort a:active {
   color: #000000;
-  border: none;
 }
 
 .by-price {
-  color: #81b3d2;
-  border-bottom: none;
-}
-.link-sort .price {
   color: #81b3d2;
   border-bottom: none;
 }
